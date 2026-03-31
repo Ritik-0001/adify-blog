@@ -1,0 +1,39 @@
+name: Publish Next Queued Post
+
+on:
+  # Trigger manually from the GitHub Actions UI
+  workflow_dispatch:
+
+  # Trigger via GitHub API — this is what n8n calls
+  # POST https://api.github.com/repos/{owner}/{repo}/dispatches
+  # Body: { "event_type": "publish-post" }
+  repository_dispatch:
+    types: [publish-post]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to commit + push
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Move oldest queued post to /posts
+        run: node scripts/publish-next.js
+
+      - name: Commit and push (if a post was published)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts/
+          git diff --staged --quiet \
+            && echo "No post was moved — queue may be empty." \
+            || (git commit -m "publish: move next queued post to /posts" && git push)
