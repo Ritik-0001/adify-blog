@@ -10,6 +10,21 @@ on:
   repository_dispatch:
     types: [publish-post]
 
+  # Cron schedule — 8x per day (UTC times, IST = UTC+5:30)
+  # 02:30 UTC = 08:00 IST  |  04:30 UTC = 10:00 IST
+  # 06:30 UTC = 12:00 IST  |  08:30 UTC = 14:00 IST
+  # 10:30 UTC = 16:00 IST  |  12:30 UTC = 18:00 IST
+  # 14:30 UTC = 20:00 IST  |  16:30 UTC = 22:00 IST
+  schedule:
+    - cron: '30 2 * * *'
+    - cron: '30 4 * * *'
+    - cron: '30 6 * * *'
+    - cron: '30 8 * * *'
+    - cron: '30 10 * * *'
+    - cron: '30 12 * * *'
+    - cron: '30 14 * * *'
+    - cron: '30 16 * * *'
+
 jobs:
   publish:
     runs-on: ubuntu-latest
