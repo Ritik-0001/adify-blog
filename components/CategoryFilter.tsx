@@ -3,7 +3,19 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useCallback } from 'react'
 
-const CATEGORIES = ['All', 'SaaS', 'Laptops', 'Keyboards', 'Comparisons']
+const CATEGORIES = [
+  'All',
+  'Comparisons',
+  'Laptops',
+  'Smartphones',
+  'Audio',
+  'Monitors',
+  'Gaming',
+  'Wearables',
+  'Accessories',
+  'Keyboards',
+  'SaaS',
+]
 
 export default function CategoryFilter() {
   const router = useRouter()
@@ -26,10 +38,10 @@ export default function CategoryFilter() {
         <button
           key={cat}
           onClick={() => setCategory(cat)}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all duration-150 ${
+          className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
             current === cat
-              ? 'bg-orange-500 text-white border-orange-500'
-              : 'bg-transparent text-zinc-400 border-zinc-700 hover:border-orange-500 hover:text-white'
+              ? 'bg-orange-500 text-white border-orange-500 shadow-lg shadow-orange-500/20'
+              : 'bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-zinc-200'
           }`}
         >
           {cat}

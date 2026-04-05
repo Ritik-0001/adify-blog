@@ -20,6 +20,12 @@ export interface Post {
   frontmatter: PostFrontmatter
   content: string
   slug: string
+  readingTime: number
+}
+
+function estimateReadingTime(content: string): number {
+  const words = content.trim().split(/\s+/).length
+  return Math.max(1, Math.ceil(words / 200))
 }
 
 export function getAllPosts(): Post[] {
@@ -27,7 +33,6 @@ export function getAllPosts(): Post[] {
 
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames
-    // Only read .mdx files directly in /posts/ — skip subdirectories like /posts/queue/
     .filter((f) => {
       if (!f.endsWith('.mdx')) return false
       return fs.statSync(path.join(postsDirectory, f)).isFile()
@@ -41,6 +46,7 @@ export function getAllPosts(): Post[] {
         frontmatter: data as PostFrontmatter,
         content,
         slug: (data.slug as string) || fileSlug,
+        readingTime: estimateReadingTime(content),
       }
     })
     .sort(
@@ -59,6 +65,7 @@ export function getPostBySlug(slug: string): Post | null {
       frontmatter: data as PostFrontmatter,
       content,
       slug,
+      readingTime: estimateReadingTime(content),
     }
   } catch {
     return null
