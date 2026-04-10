@@ -32,17 +32,31 @@ if (queued.length === 0) {
   process.exit(0)
 }
 
-const next = queued[0]
-const dest = path.join(postsDir, next.name)
+// Skip any queued files that already exist in /posts/ (conflict resolution)
+const conflicts = []
+const next = queued.find((f) => {
+  const dest = path.join(postsDir, f.name)
+  if (fs.existsSync(dest)) {
+    conflicts.push(f)
+    return false
+  }
+  return true
+})
 
-if (fs.existsSync(dest)) {
-  console.error(
-    `Error: "${next.name}" already exists in /posts/. Remove or rename the conflict before publishing.`
+if (conflicts.length > 0) {
+  console.warn(
+    `Skipped ${conflicts.length} conflict(s) — already exist in /posts/:\n` +
+      conflicts.map((f) => `  • ${f.name}`).join('\n')
   )
-  process.exit(1)
 }
 
+if (!next) {
+  console.log('All queued files already exist in /posts/ — nothing to publish.')
+  process.exit(0)
+}
+
+const dest = path.join(postsDir, next.name)
 fs.renameSync(next.fullPath, dest)
 
 console.log(`Published: posts/queue/${next.name} → posts/${next.name}`)
-console.log(`Remaining in queue: ${queued.length - 1}`)
+console.log(`Remaining in queue: ${queued.length - conflicts.length - 1}`)
