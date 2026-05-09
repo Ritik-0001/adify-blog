@@ -13,6 +13,16 @@ export const metadata: Metadata = {
     template: '%s | Adify',
   },
   description: 'AI, SaaS & Tech — Reviewed and Ranked.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/icon', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   openGraph: {
     type: 'website',
     siteName: 'Adify',
