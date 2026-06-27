@@ -52,6 +52,7 @@ export default function RootLayout({
         className={`${inter.className} bg-zinc-950 text-zinc-100 min-h-screen flex flex-col`}
       >
         <Script
+          id="google-adsense"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6227525516663799"
           crossOrigin="anonymous"

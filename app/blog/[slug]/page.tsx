@@ -4,6 +4,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts, getPostBySlug } from '@/lib/posts'
 
+const mdxComponents = {
+  table: ({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
+    <div className="overflow-x-auto -mx-4 sm:mx-0 my-6">
+      <table className="min-w-full" {...props}>{children}</table>
+    </div>
+  ),
+}
+
 interface PostPageProps {
   params: { slug: string }
 }
@@ -98,7 +106,7 @@ export default function PostPage({ params }: PostPageProps) {
           href={frontmatter.affiliate_link}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="group flex items-center justify-between gap-4 my-8 p-5 bg-gradient-to-r from-orange-500/15 to-orange-600/5 border border-orange-500/30 rounded-2xl hover:border-orange-500/60 hover:from-orange-500/20 transition-all"
+          className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 my-8 p-5 bg-gradient-to-r from-orange-500/15 to-orange-600/5 border border-orange-500/30 rounded-2xl hover:border-orange-500/60 hover:from-orange-500/20 transition-all cursor-pointer"
         >
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-orange-500/20 flex items-center justify-center shrink-0">
@@ -111,7 +119,7 @@ export default function PostPage({ params }: PostPageProps) {
               <p className="text-xs text-zinc-400 mt-0.5">Updated pricing · Free delivery eligible</p>
             </div>
           </div>
-          <span className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 group-hover:bg-orange-600 text-white font-bold rounded-xl transition-colors whitespace-nowrap text-sm shrink-0">
+          <span className="inline-flex items-center justify-center gap-1.5 px-4 min-h-[44px] bg-orange-500 group-hover:bg-orange-600 text-white font-bold rounded-xl transition-colors whitespace-nowrap text-sm w-full sm:w-auto">
             {frontmatter.affiliate_text || 'View on Amazon'}
             <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -135,7 +143,7 @@ export default function PostPage({ params }: PostPageProps) {
         prose-table:border-zinc-800 prose-table:rounded-lg
         prose-li:text-zinc-300 prose-li:marker:text-orange-500
         prose-blockquote:border-orange-500/50 prose-blockquote:text-zinc-400">
-        <MDXRemote source={content} />
+        <MDXRemote source={content} components={mdxComponents} />
       </div>
 
       {/* Affiliate disclosure */}
@@ -160,7 +168,7 @@ export default function PostPage({ params }: PostPageProps) {
             href={frontmatter.affiliate_link}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="inline-flex items-center gap-2 px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl transition-colors text-sm shadow-lg shadow-orange-500/20"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 min-h-[44px] bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl transition-colors text-sm shadow-lg shadow-orange-500/20 w-full sm:w-auto cursor-pointer"
           >
             {frontmatter.affiliate_text || 'Check Best Price on Amazon →'}
           </a>
