@@ -29,8 +29,10 @@ export default function Footer() {
               {[
                 { label: 'All Reviews', href: '/blog' },
                 { label: 'Comparisons', href: '/blog?category=Comparisons' },
-                { label: 'Wearables', href: '/blog?category=Wearables' },
-                { label: 'Accessories', href: '/blog?category=Accessories' },
+                { label: 'About', href: '/about' },
+                { label: 'Contact', href: '/contact' },
+                { label: 'Privacy Policy', href: '/privacy-policy' },
+                { label: 'Disclaimer', href: '/disclaimer' },
               ].map((link) => (
                 <Link key={link.label} href={link.href} className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors">
                   {link.label}
@@ -39,7 +41,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-zinc-800/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="border-t border-zinc-800/60 pt-5 pb-2 text-center">
+          <a
+            href="https://www.amazon.in/amazonprime?_encoding=UTF8&primeCampaignId=prime_assoc_FT_IN&linkCode=ll2&tag=adifystore-21&linkId=b6c2958b751ac79ab85429b54914e307&ref_=as_li_ss_tl"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="text-xs text-amber-600/70 hover:text-amber-500 transition-colors"
+          >
+            💛 Try Amazon Prime free — fast delivery + Prime Video
+          </a>
+        </div>
+        <div className="border-t border-zinc-800/40 pt-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-zinc-600">
             &copy; {new Date().getFullYear()} Adify. All rights reserved.
           </p>

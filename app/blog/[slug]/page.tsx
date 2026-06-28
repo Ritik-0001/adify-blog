@@ -174,6 +174,64 @@ export default function PostPage({ params }: PostPageProps) {
           </a>
         </div>
       )}
+
+      {/* Bounty — Amazon Exclusive Offers */}
+      <div className="mt-12 rounded-2xl overflow-hidden border border-amber-500/20 bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-amber-600/10">
+        <div className="px-6 pt-7 pb-2 text-center">
+          <p className="text-base font-bold text-amber-300">🎁 Exclusive Amazon Offers for Our Readers</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-amber-500/10 p-px m-4 rounded-xl overflow-hidden">
+          {/* Prime */}
+          <div className="bg-zinc-900 p-5 flex flex-col gap-3 rounded-l-xl rounded-r-none sm:rounded-r-none">
+            <span className="text-2xl">🚀</span>
+            <div>
+              <p className="text-sm font-bold text-white">Try Amazon Prime Free</p>
+              <p className="text-xs text-zinc-400 mt-1 leading-relaxed">Free delivery, Prime Video, Prime Music &amp; exclusive deals</p>
+            </div>
+            <a
+              href="https://www.amazon.in/amazonprime?_encoding=UTF8&primeCampaignId=prime_assoc_FT_IN&linkCode=ll2&tag=adifystore-21&linkId=b6c2958b751ac79ab85429b54914e307&ref_=as_li_ss_tl"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mt-auto inline-flex items-center justify-center px-4 py-2.5 min-h-[40px] bg-amber-500 hover:bg-amber-400 text-zinc-900 font-bold rounded-lg text-xs transition-colors"
+            >
+              Start Free Trial
+            </a>
+          </div>
+          {/* Audible */}
+          <div className="bg-zinc-900 p-5 flex flex-col gap-3 border-t sm:border-t-0 sm:border-l border-amber-500/10">
+            <span className="text-2xl">🎧</span>
+            <div>
+              <p className="text-sm font-bold text-white">Try Audible Free for 30 Days</p>
+              <p className="text-xs text-zinc-400 mt-1 leading-relaxed">1 free audiobook + 2 Audible Originals every month</p>
+            </div>
+            <a
+              href="https://www.amazon.in/hz/audible/arya/mlp?_encoding=UTF8&purchaseType=MTRIAL&SHOPPING_PORTAL_MODE=AUGMENTED&linkCode=ll2&tag=adifystore-21&linkId=711c9e07b2f80cd7c370644ae74bbe80&ref_=as_li_ss_tl"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mt-auto inline-flex items-center justify-center px-4 py-2.5 min-h-[40px] bg-amber-500 hover:bg-amber-400 text-zinc-900 font-bold rounded-lg text-xs transition-colors"
+            >
+              Start Free Trial
+            </a>
+          </div>
+          {/* Prime Music */}
+          <div className="bg-zinc-900 p-5 flex flex-col gap-3 rounded-r-xl rounded-l-none sm:rounded-l-none border-t sm:border-t-0 sm:border-l border-amber-500/10">
+            <span className="text-2xl">🎵</span>
+            <div>
+              <p className="text-sm font-bold text-white">Try Amazon Prime Music Free</p>
+              <p className="text-xs text-zinc-400 mt-1 leading-relaxed">Ad-free music streaming with 100M+ songs</p>
+            </div>
+            <a
+              href="https://www.amazon.in/music/prime?&linkCode=ll2&tag=adifystore-21&linkId=564a49d09261d6206ffd23a5e117f98e&ref_=as_li_ss_tl"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mt-auto inline-flex items-center justify-center px-4 py-2.5 min-h-[40px] bg-amber-500 hover:bg-amber-400 text-zinc-900 font-bold rounded-lg text-xs transition-colors"
+            >
+              Listen Free
+            </a>
+          </div>
+        </div>
+        <p className="text-center text-xs text-zinc-600 pb-5 px-6">As an Amazon Associate I earn from qualifying purchases.</p>
+      </div>
     </article>
   )
 }
