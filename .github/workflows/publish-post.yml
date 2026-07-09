@@ -25,6 +25,10 @@ on:
     - cron: '30 14 * * *'
     - cron: '30 16 * * *'
 
+concurrency:
+  group: publish-queue
+  cancel-in-progress: false   # queue runs, never cancel an in-progress publish
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -51,4 +55,4 @@ jobs:
           git add posts/
           git diff --staged --quiet \
             && echo "No post was moved — queue may be empty." \
-            || (git commit -m "publish: move next queued post to /posts" && git push)
+            || (git commit -m "publish: move next queued post to /posts" && git pull --rebase origin main && git push)
