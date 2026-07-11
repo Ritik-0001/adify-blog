@@ -49,23 +49,26 @@ jobs:
         run: node scripts/publish-next.js
 
       - name: Commit and push (if a post was published)
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add posts/
           if git diff --staged --quiet; then
             echo "No post was moved — queue may be empty."
+            echo "post_slug=" >> "$GITHUB_OUTPUT"
           else
             SLUG=$(git diff --staged --name-only | grep '^posts/[^/]*\.mdx$' | sed 's|^posts/||; s|\.mdx$||')
-            echo "POST_SLUG=$SLUG" >> "$GITHUB_ENV"
+            echo "post_slug=$SLUG" >> "$GITHUB_OUTPUT"
             git commit -m "publish: move next queued post to /posts"
             git pull --rebase origin main
             git push
           fi
 
       - name: Notify IndexNow
-        if: env.POST_SLUG != ''
+        if: steps.commit.outputs.post_slug != ''
         run: |
+          POST_SLUG="${{ steps.commit.outputs.post_slug }}"
           curl -s -o /dev/null -w "IndexNow HTTP status: %{http_code}\n" \
             -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json" \
@@ -74,3 +77,9 @@ jobs:
               \"key\": \"${{ secrets.INDEXNOW_KEY }}\",
               \"urlList\": [\"https://adify.store/blog/$POST_SLUG\"]
             }"
+
+      - name: Ping Bing sitemap
+        if: steps.commit.outputs.post_slug != ''
+        run: |
+          curl -s -o /dev/null -w "Bing ping HTTP status: %{http_code}\n" \
+            "https://www.bing.com/ping?sitemap=https://adify.store/sitemap.xml"

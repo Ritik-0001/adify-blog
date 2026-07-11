@@ -1,0 +1,57 @@
+name: Weekly Price Updater
+
+on:
+  schedule:
+    # Every Sunday at 6am IST = 00:30 UTC Sunday
+    - cron: '30 0 * * 0'
+  workflow_dispatch:   # allow manual trigger
+
+concurrency:
+  group: price-updater
+  cancel-in-progress: false
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run price updater
+        # exit 0 = prices updated, exit 2 = nothing changed (skip commit)
+        id: price-update
+        run: |
+          node scripts/update-prices.js
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+
+      - name: Commit price updates and log
+        if: steps.price-update.outputs.exit_code == '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts/ scripts/price-log.json
+          git diff --staged --quiet \
+            && echo "Nothing staged — no changes to commit." \
+            || (git commit -m "prices: weekly update $(date +'%Y-%m-%d')" && git pull --rebase origin main && git push)
+
+      - name: Commit log only (no price changes)
+        if: steps.price-update.outputs.exit_code == '2'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/price-log.json
+          git diff --staged --quiet \
+            && echo "No log changes." \
+            || (git commit -m "logs: price check run $(date +'%Y-%m-%d') — no changes" && git pull --rebase origin main && git push)

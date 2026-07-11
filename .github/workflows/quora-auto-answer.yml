@@ -1,0 +1,43 @@
+name: Quora Answer Generator
+
+on:
+  schedule:
+    # Daily at 10am IST = 04:30 UTC
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: quora-answers
+  cancel-in-progress: false
+
+jobs:
+  generate-answers:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Quora answers
+        env:
+          ANTHROPIC_API_KEY:        ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_SEARCH_API_KEY:    ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+          GOOGLE_SEARCH_ENGINE_ID:  ${{ secrets.GOOGLE_SEARCH_ENGINE_ID }}
+        run: node scripts/quora-monitor.js
+
+      - name: Commit queue and log
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/quora-queue.json scripts/quora-log.json
+          git diff --staged --quiet \
+            && echo "No new answers generated." \
+            || (git commit -m "quora: new answers queued [auto]" && git pull --rebase origin main && git push)

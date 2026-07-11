@@ -1,0 +1,50 @@
+name: Reddit Auto-Post
+
+on:
+  workflow_run:
+    workflows: ["Publish Next Queued Post"]
+    types: [completed]
+
+concurrency:
+  group: reddit-post
+  cancel-in-progress: false
+
+jobs:
+  reddit-post:
+    runs-on: ubuntu-latest
+    # Only run when the publish workflow actually succeeded
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo (latest main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2   # need at least 2 commits for git show to work
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Post to Reddit
+        env:
+          REDDIT_CLIENT_ID:     ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USERNAME:      ${{ secrets.REDDIT_USERNAME }}
+          REDDIT_PASSWORD:      ${{ secrets.REDDIT_PASSWORD }}
+          REDDIT_USER_AGENT:    AdifyBot/1.0 by /u/adifystore
+          PUBLISH_SHA:          ${{ github.event.workflow_run.head_sha }}
+        run: node scripts/reddit-post.js
+
+      - name: Commit updated reddit log
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/reddit-log.json
+          git diff --staged --quiet \
+            && echo "No log changes." \
+            || (git commit -m "logs: reddit post log [auto]" && git pull --rebase origin main && git push)
