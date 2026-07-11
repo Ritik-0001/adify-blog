@@ -6,13 +6,25 @@ export const metadata: Metadata = {
   description: 'Learn how Adify tests and reviews products for Indian consumers — our research process, evaluation criteria, India-first approach, and update policy.',
 }
 
-const PROCESS_ITEMS = [
-  'Analysis of 50+ user reviews from Amazon India and Flipkart',
-  'Cross-referencing specifications with manufacturer datasheets',
-  'Comparing prices across 5+ Indian retailers',
-  'Monitoring price history using price tracking tools',
-  'Consulting community feedback from r/india, r/IndianGaming, and Indian tech forums',
-  'Regular updates every 3 months to reflect new releases and price changes',
+const HANDS_ON_ITEMS = [
+  'We document real-world usage over 2–4 weeks',
+  'We photograph products in Indian home conditions',
+  'We note India-specific issues (voltage compatibility, humidity resistance, service availability)',
+]
+
+const RESEARCH_ITEMS = [
+  'We clearly disclose this at the start of each review',
+  'We analyze 100+ verified Amazon India and Flipkart reviews, filtering out fake reviews',
+  'We cross-reference 5+ established tech publications',
+  'We consult Indian tech communities (r/india, r/IndianGaming, Indian Facebook groups)',
+  'We verify specifications against manufacturer Indian datasheets',
+  'We track 90-day price history before recommending',
+]
+
+const DIFFERENTIATORS = [
+  'Every recommendation is evaluated for Indian conditions specifically — monsoon humidity, voltage fluctuations, local service networks',
+  'We update prices weekly using Amazon India price tracking',
+  'We disclose clearly when we haven\'t personally tested a product',
 ]
 
 const CRITERIA = [
@@ -67,17 +79,48 @@ export default function AboutOurReviewsPage() {
         {/* 1. Our Review Process */}
         <section className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900">
           <p className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-3">Our Review Process</p>
-          <p className="text-zinc-300 leading-relaxed mb-5">
-            We research each product category extensively before publishing recommendations. Our process includes:
+          <p className="text-zinc-300 leading-relaxed mb-6">
+            At Adify, we combine direct product research with community data to form our recommendations.
+            Here&rsquo;s exactly how:
           </p>
-          <ul className="space-y-3">
-            {PROCESS_ITEMS.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
-                <span className="text-orange-500 mt-0.5 shrink-0">→</span>
-                {item}
-              </li>
-            ))}
-          </ul>
+
+          <div className="space-y-7">
+            <div>
+              <p className="text-sm font-bold text-white mb-3">For products we own or have tested:</p>
+              <ul className="space-y-2.5">
+                {HANDS_ON_ITEMS.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
+                    <span className="text-green-500 mt-0.5 shrink-0">→</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-bold text-white mb-3">For products we research without hands-on access:</p>
+              <ul className="space-y-2.5">
+                {RESEARCH_ITEMS.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
+                    <span className="text-orange-500 mt-0.5 shrink-0">→</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-bold text-white mb-3">What makes us different:</p>
+              <ul className="space-y-2.5">
+                {DIFFERENTIATORS.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
+                    <span className="text-orange-500 mt-0.5 shrink-0">→</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* 2. Our Evaluation Criteria */}

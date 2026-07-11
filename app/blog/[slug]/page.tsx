@@ -117,6 +117,12 @@ export default function PostPage({ params }: PostPageProps) {
         <div>
           <p className="text-sm font-semibold text-white leading-snug">Ritik Tiwari</p>
           <p className="text-xs text-zinc-500">Reviewer &amp; Founder, Adify · NIT Graduate | Covering Indian products since 2025</p>
+          <p className="text-xs text-zinc-600 mt-1 leading-relaxed">
+            Note: This review is based on extensive research of 100+ user reviews and manufacturer specifications.{' '}
+            <Link href="/about-our-reviews" className="text-zinc-500 hover:text-zinc-400 underline underline-offset-2 transition-colors">
+              See our full review methodology
+            </Link>.
+          </p>
         </div>
       </div>
 
