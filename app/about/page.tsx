@@ -48,6 +48,17 @@ export default function AboutPage() {
         </div>
 
         <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900">
+          <p className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-3">Review Methodology</p>
+          <p className="text-zinc-400 text-sm leading-relaxed mb-4">Want to understand exactly how we research and evaluate products? Our detailed methodology covers our research process, evaluation criteria, and India-first approach.</p>
+          <Link href="/about-our-reviews" className="inline-flex items-center gap-1.5 text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors">
+            Read our full review methodology
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+
+        <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900">
           <p className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-3">Affiliate Disclosure</p>
           <p className="text-zinc-400 text-sm leading-relaxed">As an Amazon Associate, Adify earns from qualifying purchases. When you buy through links on our site, we may earn a commission at no extra cost to you. This is how we keep the site running and research-funded.</p>
         </div>

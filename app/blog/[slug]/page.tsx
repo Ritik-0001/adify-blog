@@ -92,13 +92,33 @@ export default function PostPage({ params }: PostPageProps) {
             · {readingTime} min read
           </span>
         </div>
-        <h1 className="text-2xl sm:text-4xl font-black text-white mb-4 leading-tight">
+        <h1 className="text-2xl sm:text-4xl font-black text-white mb-3 leading-tight">
           {frontmatter.title}
         </h1>
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-semibold">
+            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+            </svg>
+            Last verified: July 2026
+          </span>
+          <span className="text-xs text-zinc-600">Prices checked on Amazon India</span>
+        </div>
         <p className="text-base text-zinc-400 leading-relaxed">
           {frontmatter.description}
         </p>
       </header>
+
+      {/* Author byline */}
+      <div className="flex items-center gap-3 mb-8 pb-6 border-b border-zinc-800">
+        <div className="w-9 h-9 rounded-full bg-orange-500/20 flex items-center justify-center shrink-0">
+          <span className="text-xs font-black text-orange-400">RT</span>
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-white leading-snug">Ritik Tiwari</p>
+          <p className="text-xs text-zinc-500">Reviewer &amp; Founder, Adify · NIT Graduate | Covering Indian products since 2025</p>
+        </div>
+      </div>
 
       {/* Affiliate CTA — top */}
       {frontmatter.affiliate_link && (
@@ -174,6 +194,22 @@ export default function PostPage({ params }: PostPageProps) {
           </a>
         </div>
       )}
+
+      {/* Author bio */}
+      <div className="mt-10 p-6 rounded-2xl border border-zinc-800 bg-zinc-900 flex items-start gap-4">
+        <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center shrink-0">
+          <span className="text-base font-black text-orange-400">RT</span>
+        </div>
+        <div>
+          <p className="text-xs font-semibold text-zinc-500 uppercase tracking-widest mb-1">About the Author</p>
+          <p className="text-sm font-bold text-white mb-2">Ritik Tiwari</p>
+          <p className="text-sm text-zinc-400 leading-relaxed">
+            Ritik Tiwari is the founder of Adify and an NIT graduate with a background in computer science.
+            He covers consumer technology and other products with a focus on value-for-money recommendations
+            for Indian buyers.
+          </p>
+        </div>
+      </div>
 
       {/* Bounty — Amazon Exclusive Offers */}
       <div className="mt-12 rounded-2xl overflow-hidden border border-amber-500/20 bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-amber-600/10">

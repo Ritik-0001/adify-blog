@@ -30,6 +30,7 @@ export default function Footer() {
                 { label: 'All Reviews', href: '/blog' },
                 { label: 'Comparisons', href: '/blog?category=Comparisons' },
                 { label: 'About', href: '/about' },
+                { label: 'Our Review Process', href: '/about-our-reviews' },
                 { label: 'Contact', href: '/contact' },
                 { label: 'Privacy Policy', href: '/privacy-policy' },
                 { label: 'Disclaimer', href: '/disclaimer' },
