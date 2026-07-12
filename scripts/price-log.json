@@ -1,1 +1,464 @@
-{"runs":[],"posts":{}}
+{
+  "runs": [
+    {
+      "timestamp": "2026-07-12T04:05:40.311Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "accu-chek-vs-onetouch-glucometer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "anker-7in1-usb-c-hub-review-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "anker-powerexpand-vs-belkin-thunderbolt-hub-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "anker-vs-mi-power-bank-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "apc-vs-microtek-ups-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "apple-airpods-pro-2-review-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "apple-airpods-pro-2-vs-sony-wf1000xm5-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "apple-ipad-10th-gen-review-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-rog-g14-vs-msi-stealth-14-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-rog-strix-g16-review-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-vivobook-15-vs-hp-pavilion-15-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-vs-hp-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-zenbook-14-review-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "asus-zenscreen-vs-lg-gram-view-portable-monitor-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "ather-450x-review-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "benq-pd2705u-vs-lg-27un880-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "benq-vs-lg-monitor-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-1-5-ton-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-10000mah-power-bank-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-2-1-home-theatre-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-20000mah-power-bank-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-3-star-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-4-litre-air-fryer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-4k-dash-cam-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-4k-monitor-under-30000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-5-1-home-theatre-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-5-star-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-55-inch-oled-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-5g-phone-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-6-litre-air-fryer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-65-inch-tv-under-100000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-6kg-washing-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-7kg-washing-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-8kg-washing-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-under-35000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-fryer-for-family-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": [
+        {
+          "slug": "apple-watch-vs-samsung-galaxy-watch-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "are-robot-vacuums-worth-it-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-24-inch-monitor-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-27-inch-monitor-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-360-degree-camera-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-43-inch-tv-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-4k-monitors-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-4k-tv-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-55-inch-tv-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-5g-phones-under-15000-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-5g-phones-under-20000-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-action-cameras-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-air-coolers-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        },
+        {
+          "slug": "best-air-fryer-india-2026",
+          "error": "Amazon blocked (CAPTCHA/503)"
+        }
+      ]
+    }
+  ],
+  "posts": {
+    "accu-chek-vs-onetouch-glucometer-india-2026.mdx": {
+      "lastChecked": 1783829140312,
+      "slug": "accu-chek-vs-onetouch-glucometer-india-2026",
+      "skipped": "no price table"
+    },
+    "anker-7in1-usb-c-hub-review-2026.mdx": {
+      "lastChecked": 1783829143315,
+      "slug": "anker-7in1-usb-c-hub-review-2026",
+      "skipped": "no price table"
+    },
+    "anker-powerexpand-vs-belkin-thunderbolt-hub-2026.mdx": {
+      "lastChecked": 1783829146318,
+      "slug": "anker-powerexpand-vs-belkin-thunderbolt-hub-2026",
+      "skipped": "no price table"
+    },
+    "anker-vs-mi-power-bank-india-2026.mdx": {
+      "lastChecked": 1783829149319,
+      "slug": "anker-vs-mi-power-bank-india-2026",
+      "skipped": "no price table"
+    },
+    "apc-vs-microtek-ups-india-2026.mdx": {
+      "lastChecked": 1783829152322,
+      "slug": "apc-vs-microtek-ups-india-2026",
+      "skipped": "no price table"
+    },
+    "apple-airpods-pro-2-review-india-2026.mdx": {
+      "lastChecked": 1783829155326,
+      "slug": "apple-airpods-pro-2-review-india-2026",
+      "skipped": "no price table"
+    },
+    "apple-airpods-pro-2-vs-sony-wf1000xm5-2026.mdx": {
+      "lastChecked": 1783829158330,
+      "slug": "apple-airpods-pro-2-vs-sony-wf1000xm5-2026",
+      "skipped": "no price table"
+    },
+    "apple-ipad-10th-gen-review-india-2026.mdx": {
+      "lastChecked": 1783829161334,
+      "slug": "apple-ipad-10th-gen-review-india-2026",
+      "skipped": "no price table"
+    },
+    "apple-watch-vs-samsung-galaxy-watch-india-2026.mdx": {
+      "lastChecked": 1783829164637,
+      "slug": "apple-watch-vs-samsung-galaxy-watch-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "are-robot-vacuums-worth-it-india-2026.mdx": {
+      "lastChecked": 1783829167761,
+      "slug": "are-robot-vacuums-worth-it-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "asus-rog-g14-vs-msi-stealth-14-2026.mdx": {
+      "lastChecked": 1783829170762,
+      "slug": "asus-rog-g14-vs-msi-stealth-14-2026",
+      "skipped": "no price table"
+    },
+    "asus-rog-strix-g16-review-2026.mdx": {
+      "lastChecked": 1783829173764,
+      "slug": "asus-rog-strix-g16-review-2026",
+      "skipped": "no price table"
+    },
+    "asus-vivobook-15-vs-hp-pavilion-15-2026.mdx": {
+      "lastChecked": 1783829176767,
+      "slug": "asus-vivobook-15-vs-hp-pavilion-15-2026",
+      "skipped": "no price table"
+    },
+    "asus-vs-hp-laptop-india-2026.mdx": {
+      "lastChecked": 1783829179771,
+      "slug": "asus-vs-hp-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "asus-zenbook-14-review-india-2026.mdx": {
+      "lastChecked": 1783829182774,
+      "slug": "asus-zenbook-14-review-india-2026",
+      "skipped": "no price table"
+    },
+    "asus-zenscreen-vs-lg-gram-view-portable-monitor-2026.mdx": {
+      "lastChecked": 1783829185778,
+      "slug": "asus-zenscreen-vs-lg-gram-view-portable-monitor-2026",
+      "skipped": "no price table"
+    },
+    "ather-450x-review-india-2026.mdx": {
+      "lastChecked": 1783829188782,
+      "slug": "ather-450x-review-india-2026",
+      "skipped": "no price table"
+    },
+    "benq-pd2705u-vs-lg-27un880-2026.mdx": {
+      "lastChecked": 1783829191785,
+      "slug": "benq-pd2705u-vs-lg-27un880-2026",
+      "skipped": "no price table"
+    },
+    "benq-vs-lg-monitor-india-2026.mdx": {
+      "lastChecked": 1783829194789,
+      "slug": "benq-vs-lg-monitor-india-2026",
+      "skipped": "no price table"
+    },
+    "best-1-5-ton-ac-india-2026.mdx": {
+      "lastChecked": 1783829197792,
+      "slug": "best-1-5-ton-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-10000mah-power-bank-india-2026.mdx": {
+      "lastChecked": 1783829200796,
+      "slug": "best-10000mah-power-bank-india-2026",
+      "skipped": "no price table"
+    },
+    "best-2-1-home-theatre-india-2026.mdx": {
+      "lastChecked": 1783829203800,
+      "slug": "best-2-1-home-theatre-india-2026",
+      "skipped": "no price table"
+    },
+    "best-20000mah-power-bank-india-2026.mdx": {
+      "lastChecked": 1783829206803,
+      "slug": "best-20000mah-power-bank-india-2026",
+      "skipped": "no price table"
+    },
+    "best-24-inch-monitor-india-2026.mdx": {
+      "lastChecked": 1783829209943,
+      "slug": "best-24-inch-monitor-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-27-inch-monitor-india-2026.mdx": {
+      "lastChecked": 1783829213065,
+      "slug": "best-27-inch-monitor-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-3-star-refrigerator-india-2026.mdx": {
+      "lastChecked": 1783829216066,
+      "slug": "best-3-star-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-360-degree-camera-india-2026.mdx": {
+      "lastChecked": 1783829219205,
+      "slug": "best-360-degree-camera-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-4-litre-air-fryer-india-2026.mdx": {
+      "lastChecked": 1783829222208,
+      "slug": "best-4-litre-air-fryer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-43-inch-tv-india-2026.mdx": {
+      "lastChecked": 1783829225423,
+      "slug": "best-43-inch-tv-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-4k-dash-cam-india-2026.mdx": {
+      "lastChecked": 1783829228427,
+      "slug": "best-4k-dash-cam-india-2026",
+      "skipped": "no price table"
+    },
+    "best-4k-monitor-under-30000-india-2026.mdx": {
+      "lastChecked": 1783829231428,
+      "slug": "best-4k-monitor-under-30000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-4k-monitors-india-2026.mdx": {
+      "lastChecked": 1783829234567,
+      "slug": "best-4k-monitors-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-4k-tv-india-2026.mdx": {
+      "lastChecked": 1783829237689,
+      "slug": "best-4k-tv-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-5-1-home-theatre-india-2026.mdx": {
+      "lastChecked": 1783829240690,
+      "slug": "best-5-1-home-theatre-india-2026",
+      "skipped": "no price table"
+    },
+    "best-5-star-ac-india-2026.mdx": {
+      "lastChecked": 1783829243691,
+      "slug": "best-5-star-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-55-inch-oled-tv-india-2026.mdx": {
+      "lastChecked": 1783829246694,
+      "slug": "best-55-inch-oled-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-55-inch-tv-india-2026.mdx": {
+      "lastChecked": 1783829249837,
+      "slug": "best-55-inch-tv-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-5g-phone-under-20000-india-2026.mdx": {
+      "lastChecked": 1783829252840,
+      "slug": "best-5g-phone-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-5g-phones-under-15000-india-2026.mdx": {
+      "lastChecked": 1783829255976,
+      "slug": "best-5g-phones-under-15000-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-5g-phones-under-20000-india-2026.mdx": {
+      "lastChecked": 1783829259097,
+      "slug": "best-5g-phones-under-20000-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-6-litre-air-fryer-india-2026.mdx": {
+      "lastChecked": 1783829262098,
+      "slug": "best-6-litre-air-fryer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-65-inch-tv-under-100000-india-2026.mdx": {
+      "lastChecked": 1783829265100,
+      "slug": "best-65-inch-tv-under-100000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-6kg-washing-machine-india-2026.mdx": {
+      "lastChecked": 1783829268104,
+      "slug": "best-6kg-washing-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-7kg-washing-machine-india-2026.mdx": {
+      "lastChecked": 1783829271107,
+      "slug": "best-7kg-washing-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-8kg-washing-machine-india-2026.mdx": {
+      "lastChecked": 1783829274111,
+      "slug": "best-8kg-washing-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-under-35000-india-2026.mdx": {
+      "lastChecked": 1783829277114,
+      "slug": "best-ac-under-35000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-action-cameras-india-2026.mdx": {
+      "lastChecked": 1783829280254,
+      "slug": "best-action-cameras-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-air-coolers-india-2026.mdx": {
+      "lastChecked": 1783829283377,
+      "slug": "best-air-coolers-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-air-fryer-for-family-india-2026.mdx": {
+      "lastChecked": 1783829286378,
+      "slug": "best-air-fryer-for-family-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-fryer-india-2026.mdx": {
+      "lastChecked": 1783829289604,
+      "slug": "best-air-fryer-india-2026",
+      "error": "Amazon blocked (CAPTCHA/503)"
+    }
+  }
+}
