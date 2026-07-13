@@ -1,9 +1,10 @@
 name: Reddit Auto-Post
 
 on:
-  workflow_run:
-    workflows: ["Publish Next Queued Post"]
-    types: [completed]
+  # workflow_run:
+  #   workflows: ["Publish Next Queued Post"]
+  #   types: [completed]
+  workflow_dispatch: # manual trigger only while Reddit automation is disabled
 
 concurrency:
   group: reddit-post
@@ -12,8 +13,7 @@ concurrency:
 jobs:
   reddit-post:
     runs-on: ubuntu-latest
-    # Only run when the publish workflow actually succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     permissions:
       contents: write
@@ -37,7 +37,7 @@ jobs:
           REDDIT_USERNAME:      ${{ secrets.REDDIT_USERNAME }}
           REDDIT_PASSWORD:      ${{ secrets.REDDIT_PASSWORD }}
           REDDIT_USER_AGENT:    AdifyBot/1.0 by /u/adifystore
-          PUBLISH_SHA:          ${{ github.event.workflow_run.head_sha }}
+          PUBLISH_SHA:          ${{ github.sha }}
         run: node scripts/reddit-post.js
 
       - name: Commit updated reddit log
