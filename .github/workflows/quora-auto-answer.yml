@@ -1,10 +1,10 @@
 name: Quora Answer Generator
 
 on:
-  schedule:
-    # Daily at 10am IST = 04:30 UTC
-    - cron: '30 4 * * *'
-  workflow_dispatch:
+  # schedule:
+  #   # Daily at 10am IST = 04:30 UTC
+  #   - cron: '30 4 * * *'
+  workflow_dispatch: # manual trigger only while Quora automation is disabled
 
 concurrency:
   group: quora-answers
