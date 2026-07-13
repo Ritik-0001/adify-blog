@@ -38,7 +38,6 @@ export const metadata: Metadata = {
   },
   other: {
     'impact-site-verification': '49669290-6e18-4235-9ff5-5cc86963d896',
-    'google-adsense-account': 'ca-pub-6227525516663799',
   },
 }
 
@@ -52,13 +51,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-zinc-950 text-zinc-100 min-h-screen flex flex-col`}
       >
-        <Script
-          id="google-adsense"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6227525516663799"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         <Script
           id="clarity-script"
           strategy="afterInteractive"
