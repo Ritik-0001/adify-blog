@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-07-19T04:02:19.654Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "best-air-fryer-oven-combo-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-fryer-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-fryer-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-fryer-under-7000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-fryers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-purifier-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-purifiers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-all-in-one-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-android-tablet-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-android-tablets-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-antivirus-software-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-battery-phone-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-battery-security-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-beard-trimmer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-blood-pressure-monitors-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-blood-sugar-monitor-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-bluetooth-speaker-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-bluetooth-speakers-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-air-fryer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-electric-toothbrush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-laptop-cooling-pad-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-laptops-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-monitors-under-15000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-robot-vacuum-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-smartphones-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-wireless-earbuds-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-business-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-cctv-camera-home-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceiling-fans-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-chair-for-long-sitting-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-chromebook-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-coffee-machines-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-coffee-maker-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-colgate-electric-toothbrush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-color-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-curved-monitor-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-for-bikes-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-for-night-vision-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-with-gps-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cam-with-parking-mode-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dash-cams-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-detangling-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-developer-laptops-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dji-drone-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-doorbell-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-double-door-refrigerator-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-07-12T04:05:40.311Z",
       "updated": [],
       "skipped": [
@@ -459,6 +666,256 @@
       "lastChecked": 1783829289604,
       "slug": "best-air-fryer-india-2026",
       "error": "Amazon blocked (CAPTCHA/503)"
+    },
+    "best-air-fryer-oven-combo-india-2026.mdx": {
+      "lastChecked": 1784433739655,
+      "slug": "best-air-fryer-oven-combo-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-fryer-under-3000-india-2026.mdx": {
+      "lastChecked": 1784433742658,
+      "slug": "best-air-fryer-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-fryer-under-5000-india-2026.mdx": {
+      "lastChecked": 1784433745662,
+      "slug": "best-air-fryer-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-fryer-under-7000-india-2026.mdx": {
+      "lastChecked": 1784433748663,
+      "slug": "best-air-fryer-under-7000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-fryers-india-2026.mdx": {
+      "lastChecked": 1784433751667,
+      "slug": "best-air-fryers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-purifier-india-2026.mdx": {
+      "lastChecked": 1784433754671,
+      "slug": "best-air-purifier-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-purifiers-india-2026.mdx": {
+      "lastChecked": 1784433757675,
+      "slug": "best-air-purifiers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-all-in-one-printer-india-2026.mdx": {
+      "lastChecked": 1784433760678,
+      "slug": "best-all-in-one-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-android-tablet-under-20000-india-2026.mdx": {
+      "lastChecked": 1784433763682,
+      "slug": "best-android-tablet-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-android-tablets-india-2026.mdx": {
+      "lastChecked": 1784433766686,
+      "slug": "best-android-tablets-india-2026",
+      "skipped": "no price table"
+    },
+    "best-antivirus-software-india-2026.mdx": {
+      "lastChecked": 1784433769690,
+      "slug": "best-antivirus-software-india-2026",
+      "skipped": "no price table"
+    },
+    "best-battery-phone-india-2026.mdx": {
+      "lastChecked": 1784433772693,
+      "slug": "best-battery-phone-india-2026",
+      "skipped": "no price table"
+    },
+    "best-battery-security-camera-india-2026.mdx": {
+      "lastChecked": 1784433775697,
+      "slug": "best-battery-security-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-beard-trimmer-india-2026.mdx": {
+      "lastChecked": 1784433778700,
+      "slug": "best-beard-trimmer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-blood-pressure-monitors-india-2026.mdx": {
+      "lastChecked": 1784433781704,
+      "slug": "best-blood-pressure-monitors-india-2026",
+      "skipped": "no price table"
+    },
+    "best-blood-sugar-monitor-india-2026.mdx": {
+      "lastChecked": 1784433784708,
+      "slug": "best-blood-sugar-monitor-india-2026",
+      "skipped": "no price table"
+    },
+    "best-bluetooth-speaker-india-2026.mdx": {
+      "lastChecked": 1784433787711,
+      "slug": "best-bluetooth-speaker-india-2026",
+      "skipped": "no price table"
+    },
+    "best-bluetooth-speakers-under-3000-india-2026.mdx": {
+      "lastChecked": 1784433790715,
+      "slug": "best-bluetooth-speakers-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-air-fryer-india-2026.mdx": {
+      "lastChecked": 1784433793719,
+      "slug": "best-budget-air-fryer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-electric-toothbrush-india-2026.mdx": {
+      "lastChecked": 1784433796722,
+      "slug": "best-budget-electric-toothbrush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-laptop-cooling-pad-india-2026.mdx": {
+      "lastChecked": 1784433799726,
+      "slug": "best-budget-laptop-cooling-pad-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-laptops-under-40000-india-2026.mdx": {
+      "lastChecked": 1784433802729,
+      "slug": "best-budget-laptops-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-monitors-under-15000-india-2026.mdx": {
+      "lastChecked": 1784433805733,
+      "slug": "best-budget-monitors-under-15000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-robot-vacuum-india-2026.mdx": {
+      "lastChecked": 1784433808736,
+      "slug": "best-budget-robot-vacuum-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-smartphones-students-india-2026.mdx": {
+      "lastChecked": 1784433811740,
+      "slug": "best-budget-smartphones-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-wireless-earbuds-india-2026.mdx": {
+      "lastChecked": 1784433814744,
+      "slug": "best-budget-wireless-earbuds-india-2026",
+      "skipped": "no price table"
+    },
+    "best-business-laptop-india-2026.mdx": {
+      "lastChecked": 1784433817747,
+      "slug": "best-business-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-india-2026.mdx": {
+      "lastChecked": 1784433820751,
+      "slug": "best-camera-phone-india-2026",
+      "skipped": "no price table"
+    },
+    "best-cctv-camera-home-india-2026.mdx": {
+      "lastChecked": 1784433823754,
+      "slug": "best-cctv-camera-home-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceiling-fans-india-2026.mdx": {
+      "lastChecked": 1784433826758,
+      "slug": "best-ceiling-fans-india-2026",
+      "skipped": "no price table"
+    },
+    "best-chair-for-long-sitting-india-2026.mdx": {
+      "lastChecked": 1784433829761,
+      "slug": "best-chair-for-long-sitting-india-2026",
+      "skipped": "no price table"
+    },
+    "best-chromebook-india-2026.mdx": {
+      "lastChecked": 1784433832765,
+      "slug": "best-chromebook-india-2026",
+      "skipped": "no price table"
+    },
+    "best-coffee-machines-india-2026.mdx": {
+      "lastChecked": 1784433835768,
+      "slug": "best-coffee-machines-india-2026",
+      "skipped": "no price table"
+    },
+    "best-coffee-maker-india-2026.mdx": {
+      "lastChecked": 1784433838772,
+      "slug": "best-coffee-maker-india-2026",
+      "skipped": "no price table"
+    },
+    "best-colgate-electric-toothbrush-india-2026.mdx": {
+      "lastChecked": 1784433841775,
+      "slug": "best-colgate-electric-toothbrush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-color-printer-india-2026.mdx": {
+      "lastChecked": 1784433844779,
+      "slug": "best-color-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-curved-monitor-under-20000-india-2026.mdx": {
+      "lastChecked": 1784433847783,
+      "slug": "best-curved-monitor-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-for-bikes-india-2026.mdx": {
+      "lastChecked": 1784433850786,
+      "slug": "best-dash-cam-for-bikes-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-for-night-vision-india-2026.mdx": {
+      "lastChecked": 1784433853790,
+      "slug": "best-dash-cam-for-night-vision-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-india-2026.mdx": {
+      "lastChecked": 1784433856793,
+      "slug": "best-dash-cam-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-under-3000-india-2026.mdx": {
+      "lastChecked": 1784433859797,
+      "slug": "best-dash-cam-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-under-5000-india-2026.mdx": {
+      "lastChecked": 1784433862800,
+      "slug": "best-dash-cam-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-with-gps-india-2026.mdx": {
+      "lastChecked": 1784433865804,
+      "slug": "best-dash-cam-with-gps-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cam-with-parking-mode-india-2026.mdx": {
+      "lastChecked": 1784433868808,
+      "slug": "best-dash-cam-with-parking-mode-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dash-cams-india-2026.mdx": {
+      "lastChecked": 1784433871811,
+      "slug": "best-dash-cams-india-2026",
+      "skipped": "no price table"
+    },
+    "best-detangling-brush-india-2026.mdx": {
+      "lastChecked": 1784433874814,
+      "slug": "best-detangling-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-developer-laptops-india-2026.mdx": {
+      "lastChecked": 1784433877817,
+      "slug": "best-developer-laptops-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dji-drone-india-2026.mdx": {
+      "lastChecked": 1784433880820,
+      "slug": "best-dji-drone-india-2026",
+      "skipped": "no price table"
+    },
+    "best-doorbell-camera-india-2026.mdx": {
+      "lastChecked": 1784433883824,
+      "slug": "best-doorbell-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-double-door-refrigerator-india-2026.mdx": {
+      "lastChecked": 1784433886827,
+      "slug": "best-double-door-refrigerator-india-2026",
+      "skipped": "no price table"
     }
   }
 }
