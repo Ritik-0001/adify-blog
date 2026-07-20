@@ -11,6 +11,8 @@
  *   node scripts/asin-replacer.js -f desc.txt -o out.txt  # writes to file instead
  */
 
+require('dotenv').config()
+
 const amazonPaapi = require('amazon-paapi')
 const { execSync, spawnSync } = require('child_process')
 const fs = require('fs')
@@ -18,7 +20,7 @@ const path = require('path')
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
-const TAG = 'adifystore-21'
+const TAG = process.env.ASSOCIATE_TAG || 'adifystore-21'
 const PARTNER_TAG = TAG
 const HOST = 'webservices.amazon.in'
 const REGION = 'eu-west-1'  // India marketplace region for PA API
