@@ -1,14 +1,27 @@
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts, getPostBySlug } from '@/lib/posts'
 
 const mdxComponents = {
   table: ({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="overflow-x-auto -mx-4 sm:mx-0 my-6">
-      <table className="min-w-full" {...props}>{children}</table>
+    <div className="overflow-x-auto -mx-4 sm:mx-0 my-6 rounded-xl border border-zinc-800">
+      <table className="min-w-full divide-y divide-zinc-800 text-sm" {...props}>{children}</table>
     </div>
+  ),
+  thead: ({ children, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) => (
+    <thead className="bg-zinc-800/60" {...props}>{children}</thead>
+  ),
+  th: ({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) => (
+    <th className="px-4 py-3 text-left text-xs font-semibold text-zinc-300 uppercase tracking-wider whitespace-nowrap" {...props}>{children}</th>
+  ),
+  td: ({ children, ...props }: React.HTMLAttributes<HTMLTableCellElement>) => (
+    <td className="px-4 py-3 text-zinc-300 border-t border-zinc-800/60" {...props}>{children}</td>
+  ),
+  tr: ({ children, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
+    <tr className="hover:bg-zinc-800/30 transition-colors" {...props}>{children}</tr>
   ),
 }
 
@@ -163,7 +176,7 @@ export default function PostPage({ params }: PostPageProps) {
         prose-table:border-zinc-800 prose-table:rounded-lg
         prose-li:text-zinc-300 prose-li:marker:text-orange-500
         prose-blockquote:border-orange-500/50 prose-blockquote:text-zinc-400">
-        <MDXRemote source={content} components={mdxComponents} />
+        <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
 
       {/* Affiliate disclosure */}
