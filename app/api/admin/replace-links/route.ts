@@ -4,6 +4,7 @@ import amazonPaapi from 'amazon-paapi'
 export const maxDuration = 60
 
 const TAG = process.env.ASSOCIATE_TAG || 'adifystore-21'
+const DIVIDER = '━━━━━━━━━━━━━━━━━━━━━━'
 
 const commonParameters = {
   AccessKey: process.env.AMAZON_ACCESS_KEY ?? '',
@@ -19,13 +20,15 @@ function buildAsinUrl(asin: string): string {
   return `https://www.amazon.in/dp/${asin}?tag=${TAG}`
 }
 
-// Extracts ASIN from /dp/XXXXXXXXXX or /gp/product/XXXXXXXXXX path segments
+function buildSearchUrl(keyword: string): string {
+  return `https://www.amazon.in/s?k=${keyword.trim().replace(/\s+/g, '+').replace(/[+]india/i, '')}&tag=${TAG}`
+}
+
 function asinFromPath(url: string): string | null {
   const m = url.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/i)
   return m ? m[1].toUpperCase() : null
 }
 
-// Follows an amzn.to / amzn.in redirect and returns the resolved full URL
 async function resolveRedirect(url: string): Promise<string | null> {
   try {
     const res = await fetch(url, {
@@ -39,32 +42,14 @@ async function resolveRedirect(url: string): Promise<string | null> {
   }
 }
 
-// ── Keyword extraction ────────────────────────────────────────────────────────
+// ── Flipkart keyword extraction ───────────────────────────────────────────────
 
-function keywordFromAmazonUrl(url: string): string | null {
-  try {
-    const u = new URL(url)
-    const kw =
-      u.searchParams.get('k') ||
-      u.searchParams.get('q') ||
-      u.searchParams.get('field-keywords')
-    if (kw) return decodeURIComponent(kw).replace(/\+/g, ' ')
-    const seg = u.pathname.split('/').filter(Boolean)
-    if (seg[0] && seg[0] !== 'dp' && seg[0] !== 's' && seg[0].length > 4) {
-      return seg[0].replace(/-/g, ' ')
-    }
-  } catch (_) {}
-  return null
-}
-
-// Brand names that need specific casing
 const BRAND_CASES: Record<string, string> = {
   lg: 'LG', tcl: 'TCL', jbl: 'JBL', hp: 'HP', jvc: 'JVC',
   aoc: 'AOC', vu: 'Vu', mi: 'Mi', boat: 'boAt', oneplus: 'OnePlus',
   oppo: 'OPPO', poco: 'POCO', iqoo: 'iQOO',
 }
 
-// TV OS / platform names and their display form
 const TV_OS: Record<string, string> = {
   webos: 'WebOS', tizen: 'Tizen', android: 'Android',
   vidaa: 'VIDAA', fire: 'Fire TV', google: 'Google TV',
@@ -78,9 +63,7 @@ function keywordFromFlipkartUrl(rawUrl: string): string | null {
   const normalised = /^https?:\/\//i.test(rawUrl) ? rawUrl : `https://${rawUrl}`
   try {
     const u = new URL(normalised)
-    const parts = u.pathname.split('/').filter(Boolean)
-    // Flipkart path: /<product-slug>/p/itm... — slug is always first segment
-    const slug = parts[0]
+    const slug = u.pathname.split('/').filter(Boolean)[0]
     if (!slug || slug === 'p' || slug.length <= 3) return null
 
     const segs = slug.split('-').filter(p => p.length > 0)
@@ -89,61 +72,40 @@ function keywordFromFlipkartUrl(rawUrl: string): string | null {
     const brand = fkCap(segs[0])
     const isTV = segs.some(s => s.toLowerCase() === 'tv')
 
-    // ── Extract size in inches ─────────────────────────────────────────────
-    // Prefer explicit "N inch(es)" in slug; fall back to converting cm.
-    // Flipkart sometimes writes decimal cm as two segments: "138-68-cm" = 138.68 cm
+    // Size: prefer "N inch"; fall back to converting cm (handles decimal "138-68-cm")
     let sizeInch: string | null = null
     for (let i = 0; i < segs.length - 1; i++) {
       if (/^\d+$/.test(segs[i]) && /^inch(es)?$/i.test(segs[i + 1])) {
-        sizeInch = segs[i]
-        break
+        sizeInch = segs[i]; break
       }
     }
     if (!sizeInch) {
       for (let i = 0; i < segs.length - 1; i++) {
         if (/^\d{2,3}$/.test(segs[i])) {
-          const next = segs[i + 1] ?? ''
-          if (next === 'cm') {
-            sizeInch = String(Math.round(parseInt(segs[i]) / 2.54))
-            break
-          }
-          // Decimal format: "138-68-cm"
-          if (/^\d{1,2}$/.test(next) && (segs[i + 2] ?? '') === 'cm') {
-            sizeInch = String(Math.round(parseFloat(`${segs[i]}.${next}`) / 2.54))
-            break
+          const nxt = segs[i + 1] ?? ''
+          if (nxt === 'cm') { sizeInch = String(Math.round(parseInt(segs[i]) / 2.54)); break }
+          if (/^\d{1,2}$/.test(nxt) && (segs[i + 2] ?? '') === 'cm') {
+            sizeInch = String(Math.round(parseFloat(`${segs[i]}.${nxt}`) / 2.54)); break
           }
         }
       }
     }
 
-    // ── TV-specific query: brand + model + size + tech/OS + "Smart TV" ─────
     if (isTV) {
       const out: string[] = [brand]
-
-      // Model identifier: 2nd segment if it's a word (not a number/generic)
-      const GENERIC_2ND = new Set(['series', 'tv', 'smart', 'ultra', 'full', 'hd', 'led', 'lcd', 'new', 'cm', 'inch'])
+      const GENERIC2 = new Set(['series', 'tv', 'smart', 'ultra', 'full', 'hd', 'led', 'lcd', 'new', 'cm', 'inch'])
       const second = segs[1] ?? ''
-      if (second && !/^\d/.test(second) && !GENERIC_2ND.has(second.toLowerCase())) {
-        out.push(fkCap(second))
-      }
-
+      if (second && !/^\d/.test(second) && !GENERIC2.has(second.toLowerCase())) out.push(fkCap(second))
       if (sizeInch) out.push(`${sizeInch} inch`)
-
-      // "mini-led" — check adjacent parts
       const miniIdx = segs.findIndex(s => s.toLowerCase() === 'mini')
-      if (miniIdx !== -1 && (segs[miniIdx + 1] ?? '').toLowerCase() === 'led') {
-        out.push('Mini LED')
-      }
-
-      // OS / platform
+      if (miniIdx !== -1 && (segs[miniIdx + 1] ?? '').toLowerCase() === 'led') out.push('Mini LED')
       const osWord = segs.find(s => TV_OS[s.toLowerCase()])
       if (osWord) out.push(TV_OS[osWord.toLowerCase()])
-
       out.push('Smart TV')
       return out.join(' ')
     }
 
-    // ── Non-TV: brand + up to 3 meaningful words + size ───────────────────
+    // Non-TV: brand + up to 3 meaningful words + size
     const SKIP = new Set([
       'cm','inch','inches','mm','hz','ghz','mhz','gb','tb','mb','ml','kg','w','watt','watts',
       'ultra','full','hd','4k','8k','fhd','uhd','qhd','led','lcd','ips','va','oled','amoled','qled',
@@ -151,116 +113,108 @@ function keywordFromFlipkartUrl(rawUrl: string): string | null {
       'black','white','silver','gold','blue','red','green','grey','gray',
     ])
     const UNIT_NEXT = new Set(['cm','inch','inches','mm','gb','tb','hz','mhz','ghz'])
-
     const out: string[] = [brand]
     let added = 0
     for (let i = 1; i < segs.length && added < 3; i++) {
       const p = segs[i].toLowerCase()
       if (SKIP.has(p)) continue
-      // Skip bare measurement numbers (e.g. "138" before "cm", "68" as decimal)
-      if (/^\d+$/.test(segs[i])) {
-        const nxt = (segs[i + 1] ?? '').toLowerCase()
-        if (UNIT_NEXT.has(nxt)) continue
-        // Skip decimal fraction of a cm measurement: "138-68-cm"
-        if (/^\d{1,2}$/.test(segs[i]) && (segs[i + 1] ?? '') === 'cm') continue
-        const prev = (segs[i - 1] ?? '').toLowerCase()
-        if (UNIT_NEXT.has(prev)) continue
-      }
-      out.push(fkCap(segs[i]))
-      added++
+      if (/^\d+$/.test(segs[i]) && UNIT_NEXT.has((segs[i + 1] ?? '').toLowerCase())) continue
+      if (/^\d{1,2}$/.test(segs[i]) && (segs[i + 1] ?? '') === 'cm') continue
+      out.push(fkCap(segs[i])); added++
     }
     if (sizeInch) out.push(`${sizeInch} inch`)
-
     return out.length > 1 ? out.join(' ') : null
   } catch (_) {}
   return null
 }
 
-// ── Job classification ────────────────────────────────────────────────────────
+function keywordFromAmazonUrl(url: string): string | null {
+  try {
+    const u = new URL(url)
+    const kw = u.searchParams.get('k') || u.searchParams.get('q') || u.searchParams.get('field-keywords')
+    if (kw) return decodeURIComponent(kw).replace(/\+/g, ' ')
+    const seg = u.pathname.split('/').filter(Boolean)
+    if (seg[0] && seg[0] !== 'dp' && seg[0] !== 's' && seg[0].length > 4) return seg[0].replace(/-/g, ' ')
+  } catch (_) {}
+  return null
+}
 
-type DirectJob  = { kind: 'direct';   originalUrl: string; asin: string }
-type RedirectJob= { kind: 'redirect'; originalUrl: string }
-type SearchJob  = { kind: 'search';   originalUrl: string; keyword: string }
+// ── Job types ─────────────────────────────────────────────────────────────────
+
+type DirectJob   = { kind: 'direct';   originalUrl: string; asin: string;   name: string }
+type RedirectJob = { kind: 'redirect'; originalUrl: string;                  name: string }
+type SearchJob   = { kind: 'search';   originalUrl: string; keyword: string; name: string }
 type Job = DirectJob | RedirectJob | SearchJob
 
-function classifyUrl(url: string, label: string | null): Job | null {
-  // ── link.amazon[.com]/ASIN — ASIN is the first path segment ──────────────
-  // Handles https://link.amazon/ASIN and bare link.amazon/ASIN
-  // Use ≥9 chars to be tolerant of slightly non-standard IDs
+function classifyUrl(url: string, name: string): Job | null {
+  // link.amazon[.com]/ASIN — ASIN is the first path segment
   const linkAmazon = url.match(/link\.amazon(?:\.com)?\/([A-Z0-9]{9,12})(?:[/?#]|$)/i)
-  if (linkAmazon) {
-    return { kind: 'direct', originalUrl: url, asin: linkAmazon[1].toUpperCase() }
-  }
+  if (linkAmazon) return { kind: 'direct', originalUrl: url, asin: linkAmazon[1].toUpperCase(), name }
 
-  // ── amzn.to / amzn.in short links — need redirect resolution ──────────────
-  if (/amzn\.to|amzn\.in/i.test(url)) {
-    return { kind: 'redirect', originalUrl: url }
-  }
+  if (/amzn\.to|amzn\.in/i.test(url)) return { kind: 'redirect', originalUrl: url, name }
 
-  // ── Full amazon.in URLs ────────────────────────────────────────────────────
   if (/amazon\.in/i.test(url)) {
     const asin = asinFromPath(url)
-    if (asin) return { kind: 'direct', originalUrl: url, asin }
-    const kw = keywordFromAmazonUrl(url) || label
-    if (kw) return { kind: 'search', originalUrl: url, keyword: kw }
+    if (asin) return { kind: 'direct', originalUrl: url, asin, name }
+    const kw = keywordFromAmazonUrl(url) || name
+    if (kw) return { kind: 'search', originalUrl: url, keyword: kw, name }
     return null
   }
 
-  // ── Flipkart (bare or https) ───────────────────────────────────────────────
   if (/flipkart\.com/i.test(url)) {
-    const keyword = keywordFromFlipkartUrl(url) || label
-    if (keyword) return { kind: 'search', originalUrl: url, keyword }
+    const keyword = keywordFromFlipkartUrl(url) || name
+    if (keyword) return { kind: 'search', originalUrl: url, keyword, name }
     return null
   }
 
   return null
 }
 
-// ── URL detection from text ───────────────────────────────────────────────────
+// ── URL detection ─────────────────────────────────────────────────────────────
 
-// Markdown links — capture label and URL
-const MD_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g
+const MD_RE            = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g
+const BARE_HTTPS_RE    = /https?:\/\/(?:(?:www\.)?(?:amazon\.in|amzn\.to|amzn\.in|flipkart\.com)|link\.amazon(?:\.com)?)[^\s)>\],"']*/g
+const BARE_LINK_AMAZON = /(?<![/\w])link\.amazon(?:\.com)?\/[A-Z0-9]{9,12}\b/gi
+const BARE_FLIPKART    = /(?<![/\w])(?:www\.)?flipkart\.com\/[^\s)>\],"']*/gi
 
-// Bare HTTPS links (Amazon shortlinks, full amazon.in, full flipkart)
-const BARE_HTTPS_RE = /https?:\/\/(?:(?:www\.)?(?:amazon\.in|amzn\.to|amzn\.in|flipkart\.com)|link\.amazon(?:\.com)?)[^\s)>\],"']*/g
-
-// Bare link.amazon without https (e.g. link.amazon/B0hjOGS1V)
-const BARE_LINK_AMAZON_RE = /(?<![/\w])link\.amazon(?:\.com)?\/[A-Z0-9]{10}\b/gi
-
-// Bare flipkart.com without https (e.g. flipkart.com/product-slug/p/itm...)
-const BARE_FLIPKART_RE = /(?<![/\w])(?:www\.)?flipkart\.com\/[^\s)>\],"']*/gi
+// Extract product name from text on the same line before the URL
+function nameFromLine(url: string, text: string): string {
+  const escaped = url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const m = text.match(new RegExp(`([^\\n]*?)\\s*${escaped}`))
+  if (!m?.[1]) return ''
+  return m[1]
+    .replace(/^\s*\d+[.)]\s*/, '')           // strip "1. "
+    .replace(/\s*[→:•\-–—]+\s*$/, '')       // strip trailing separators
+    .replace(/[\u{1F300}-\u{1FFFF}]+/gu, '') // strip emoji
+    .trim()
+    .slice(0, 80)
+}
 
 function collectJobs(text: string): Job[] {
   const jobs: Job[] = []
   const seen = new Set<string>()
 
   function add(url: string, label: string | null) {
-    // Trim trailing punctuation that isn't part of the URL
     const clean = url.replace(/[.,;!?)'"\]]+$/, '')
     if (seen.has(clean)) return
     seen.add(clean)
-    const job = classifyUrl(clean, label)
+    const name = (label || nameFromLine(clean, text)).trim()
+    const job = classifyUrl(clean, name)
     if (job) jobs.push(job)
   }
 
-  // 1. Markdown links (label gives us a better keyword than the URL slug)
-  MD_RE.lastIndex = 0
   let m: RegExpExecArray | null
-  while ((m = MD_RE.exec(text)) !== null) {
-    add(m[2], m[1])
-  }
+  MD_RE.lastIndex = 0
+  while ((m = MD_RE.exec(text)) !== null) add(m[2], m[1])
 
-  // 2. Bare HTTPS URLs
   BARE_HTTPS_RE.lastIndex = 0
   while ((m = BARE_HTTPS_RE.exec(text)) !== null) add(m[0], null)
 
-  // 3. Bare link.amazon (no protocol)
-  BARE_LINK_AMAZON_RE.lastIndex = 0
-  while ((m = BARE_LINK_AMAZON_RE.exec(text)) !== null) add(m[0], null)
+  BARE_LINK_AMAZON.lastIndex = 0
+  while ((m = BARE_LINK_AMAZON.exec(text)) !== null) add(m[0], null)
 
-  // 4. Bare flipkart.com (no protocol)
-  BARE_FLIPKART_RE.lastIndex = 0
-  while ((m = BARE_FLIPKART_RE.exec(text)) !== null) add(m[0], null)
+  BARE_FLIPKART.lastIndex = 0
+  while ((m = BARE_FLIPKART.exec(text)) !== null) add(m[0], null)
 
   return jobs
 }
@@ -279,26 +233,87 @@ async function searchAsin(keyword: string): Promise<string | null> {
     if (!items?.length) return null
     return (items[0].ASIN as string).toUpperCase()
   } catch (err: any) {
-    const msg =
-      err?.response?.data?.Errors?.[0]?.Message || err?.message || 'unknown'
+    const msg = err?.response?.data?.Errors?.[0]?.Message || err?.message || 'unknown'
     console.error(`PA API error for "${keyword}": ${msg}`)
     return null
   }
 }
 
-// ── Text replacement ──────────────────────────────────────────────────────────
+// ── Description parsing helpers ───────────────────────────────────────────────
 
-function applyReplacements(text: string, map: Map<string, string>): string {
-  // Sort longest original URL first to prevent partial matches
-  const entries = Array.from(map.entries()).sort(
-    (a, b) => b[0].length - a[0].length
-  )
-  let result = text
-  for (const [original, replacement] of entries) {
-    const escaped = original.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    result = result.replace(new RegExp(escaped, 'g'), replacement)
+function extractTopic(text: string): string {
+  for (const line of text.split('\n')) {
+    const clean = line.replace(/[#*_~`]/g, '').replace(/[\u{1F300}-\u{1FFFF}]/gu, '').trim()
+    if (clean.length > 5 && !/^\d+:\d{2}/.test(clean) && !clean.startsWith('#')) {
+      return clean.split(/\s+/).slice(0, 6).join(' ')
+    }
   }
-  return result
+  return 'Check out these top picks'
+}
+
+function extractTimestamps(text: string): string[] {
+  return text
+    .split('\n')
+    .map(l => l.trim())
+    .filter(l => /^\d{1,2}:\d{2}/.test(l))
+}
+
+function extractHashtags(text: string): string[] {
+  const raw = (text.match(/#[a-zA-Z][a-zA-Z0-9_]*/g) ?? [])
+  const unique = [...new Set(raw.map(h => h.toLowerCase()))]
+  return unique.filter(h => h !== '#adify').slice(0, 3)
+}
+
+function inferCategory(jobs: Job[]): { label: string; slug: string } {
+  const allText = jobs.map(j => ('keyword' in j ? j.keyword : '') + ' ' + j.name).join(' ').toLowerCase()
+  if (/\btv\b|television|smart tv|webos|tizen/.test(allText))   return { label: 'smart+tv',      slug: 'best-smart-tv-india-2026' }
+  if (/headphone|earphone|earbuds|neckband/.test(allText))       return { label: 'headphones',    slug: 'best-headphones-india-2026' }
+  if (/laptop/.test(allText))                                     return { label: 'laptop',        slug: 'best-laptops-india-2026' }
+  if (/phone|smartphone|mobile/.test(allText))                   return { label: 'smartphones',   slug: 'best-smartphones-india-2026' }
+  if (/speaker|soundbar/.test(allText))                          return { label: 'speakers',      slug: 'best-speakers-india-2026' }
+  if (/camera/.test(allText))                                    return { label: 'cameras',       slug: 'best-cameras-india-2026' }
+  if (/keyboard/.test(allText))                                  return { label: 'keyboards',     slug: 'best-keyboards-india-2026' }
+  return { label: 'electronics', slug: 'best-electronics-india-2026' }
+}
+
+// ── Output builder ────────────────────────────────────────────────────────────
+
+interface ProductLine { name: string; url: string }
+
+function buildOutput(
+  description: string,
+  products: ProductLine[],
+  category: { label: string; slug: string },
+): string {
+  const topic      = extractTopic(description)
+  const timestamps = extractTimestamps(description)
+  const hashtags   = extractHashtags(description)
+
+  const categoryUrl = `https://www.amazon.in/s?k=${category.label}+india&tag=${TAG}`
+  const adifyUrl    = `https://adify.store/blog/${category.slug}`
+  const tags        = [...hashtags, '#adify'].join(' ')
+
+  const lines: string[] = [
+    `🔥 ${topic}`,
+    '',
+    DIVIDER,
+    ...products.map(p => `${p.name} → ${p.url}`),
+    DIVIDER,
+    `🛒 ${categoryUrl}`,
+    `🔍 ${adifyUrl}`,
+  ]
+
+  if (timestamps.length > 0) {
+    lines.push(DIVIDER)
+    lines.push(...timestamps)
+  }
+
+  lines.push(DIVIDER)
+  lines.push(tags)
+  lines.push('')
+  lines.push('Affiliate links — no extra cost to you.')
+
+  return lines.join('\n')
 }
 
 // ── Route handler ─────────────────────────────────────────────────────────────
@@ -324,83 +339,79 @@ export async function POST(req: NextRequest) {
 
   const jobs = collectJobs(description)
   if (jobs.length === 0) {
-    return NextResponse.json({
-      result: description,
-      replaced: 0,
-      log: ['No Amazon or Flipkart links found.'],
-    })
+    return NextResponse.json({ result: description, replaced: 0, log: ['No product links found.'] })
   }
 
-  const replacementMap = new Map<string, string>()
+  const urlToFinalUrl = new Map<string, string>() // originalUrl → final affiliate URL
   const log: string[] = []
 
-  // ── Step 1: direct replacements (no I/O needed) ───────────────────────────
+  // ── Step 1: direct (link.amazon, full amazon.in with /dp/) ───────────────
   for (const job of jobs) {
     if (job.kind === 'direct') {
-      replacementMap.set(job.originalUrl, buildAsinUrl(job.asin))
-      log.push(`✓ direct  ${job.originalUrl} → ${job.asin}`)
+      const url = buildAsinUrl(job.asin)
+      urlToFinalUrl.set(job.originalUrl, url)
+      log.push(`✓ direct   ${job.originalUrl} → ${job.asin}`)
     }
   }
 
-  // ── Step 2: resolve short-link redirects in parallel ─────────────────────
+  // ── Step 2: resolve amzn.to / amzn.in redirects (parallel) ──────────────
   const redirectJobs = jobs.filter((j): j is RedirectJob => j.kind === 'redirect')
   if (redirectJobs.length > 0) {
-    const resolved = await Promise.all(
-      redirectJobs.map(async j => {
-        const fullUrl = await resolveRedirect(j.originalUrl)
-        return { job: j, fullUrl }
-      })
+    const results = await Promise.all(
+      redirectJobs.map(async j => ({ job: j, fullUrl: await resolveRedirect(j.originalUrl) }))
     )
-    for (const { job, fullUrl } of resolved) {
+    for (const { job, fullUrl } of results) {
       if (!fullUrl) {
-        log.push(`✗ redirect ${job.originalUrl} — redirect failed, link unchanged`)
+        log.push(`✗ redirect ${job.originalUrl} — failed`)
         continue
       }
       const asin = asinFromPath(fullUrl)
       if (asin) {
-        replacementMap.set(job.originalUrl, buildAsinUrl(asin))
-        log.push(`✓ redirect ${job.originalUrl} → ${asin} (via ${fullUrl})`)
+        urlToFinalUrl.set(job.originalUrl, buildAsinUrl(asin))
+        log.push(`✓ redirect ${job.originalUrl} → ${asin}`)
       } else {
-        // Non-product page (goldbox, /b/ category, /gp/ — no /dp/ in URL)
-        // Replace with a generic affiliate search so the tag is still applied
+        // Non-product page (goldbox, category, etc.) → generic deals link
         const fallback = `https://www.amazon.in/s?k=best+deals+today&tag=${TAG}`
-        replacementMap.set(job.originalUrl, fallback)
-        log.push(`~ redirect ${job.originalUrl} → no ASIN (${fullUrl}) — used generic deals link`)
+        urlToFinalUrl.set(job.originalUrl, fallback)
+        log.push(`~ redirect ${job.originalUrl} → no /dp/ — generic deals link`)
       }
     }
   }
 
   // ── Step 3: PA API searches (sequential, rate-limited) ───────────────────
   const searchJobs = jobs.filter((j): j is SearchJob => j.kind === 'search')
-
-  // Deduplicate by keyword so identical products are searched once
-  const keywordToAsin = new Map<string, string | null>()
+  const kwToAsin = new Map<string, string | null>()
   for (const job of searchJobs) {
-    if (keywordToAsin.has(job.keyword)) continue
-
-    process.stdout.write(`Searching PA API: "${job.keyword}" ... `)
+    if (kwToAsin.has(job.keyword)) continue
     const asin = await searchAsin(job.keyword)
-    keywordToAsin.set(job.keyword, asin)
-    console.log(asin ?? 'not found')
-
-    // Stay within PA API 1 req/sec rate limit
+    kwToAsin.set(job.keyword, asin)
+    log.push(asin ? `✓ search   "${job.keyword}" → ${asin}` : `✗ search   "${job.keyword}" — not found`)
     await new Promise(r => setTimeout(r, 1100))
   }
-
   for (const job of searchJobs) {
-    const asin = keywordToAsin.get(job.keyword)
-    if (asin) {
-      replacementMap.set(job.originalUrl, buildAsinUrl(asin))
-      log.push(`✓ search  "${job.keyword}" → ${asin}`)
-    } else {
-      log.push(`✗ search  "${job.keyword}" — not found, link unchanged`)
-    }
+    const asin = kwToAsin.get(job.keyword)
+    if (asin) urlToFinalUrl.set(job.originalUrl, buildAsinUrl(asin))
+    // No fallback here — handled per-product in the output builder below
   }
 
-  const result = applyReplacements(description, replacementMap)
+  // ── Step 4: build product list ────────────────────────────────────────────
+  const products: ProductLine[] = jobs.map(job => {
+    const finalUrl = urlToFinalUrl.get(job.originalUrl)
+    const displayName = job.name || ('keyword' in job ? job.keyword : job.asin)
+
+    if (finalUrl) return { name: displayName, url: finalUrl }
+
+    // Unfound → Amazon search fallback (never leave a product linkless)
+    const kw = ('keyword' in job ? job.keyword : displayName) + ' india'
+    return { name: displayName, url: buildSearchUrl(kw) }
+  })
+
+  const category = inferCategory(jobs)
+  const result   = buildOutput(description, products, category)
+
   return NextResponse.json({
     result,
-    replaced: replacementMap.size,
+    replaced: urlToFinalUrl.size,
     total: jobs.length,
     log,
   })
