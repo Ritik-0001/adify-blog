@@ -243,7 +243,7 @@ async function searchAsin(keyword: string): Promise<string | null> {
 
 function extractTopic(text: string): string {
   for (const line of text.split('\n')) {
-    const clean = line.replace(/[#*_~`]/g, '').replace(/[\u{1F300}-\u{1FFFF}]/gu, '').trim()
+    const clean = line.replace(/[#*_~`]/g, '').replace(/[\uD800-\uDFFF]/g, '').trim()
     if (clean.length > 5 && !/^\d+:\d{2}/.test(clean) && !clean.startsWith('#')) {
       return clean.split(/\s+/).slice(0, 6).join(' ')
     }
