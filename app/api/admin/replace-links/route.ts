@@ -397,7 +397,7 @@ export async function POST(req: NextRequest) {
   // ── Step 4: build product list ────────────────────────────────────────────
   const products: ProductLine[] = jobs.map(job => {
     const finalUrl = urlToFinalUrl.get(job.originalUrl)
-    const displayName = job.name || ('keyword' in job ? job.keyword : job.asin)
+    const displayName = job.name || ('keyword' in job ? job.keyword : 'asin' in job ? job.asin : '')
 
     if (finalUrl) return { name: displayName, url: finalUrl }
 
