@@ -24,9 +24,15 @@ function buildSearchUrl(keyword: string): string {
   return `https://www.amazon.in/s?k=${keyword.trim().replace(/\s+/g, '+').replace(/[+]india/i, '')}&tag=${TAG}`
 }
 
+function isValidAsin(asin: string): boolean {
+  return /^B[A-Z0-9]{9}$/.test(asin)
+}
+
 function asinFromPath(url: string): string | null {
   const m = url.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/i)
-  return m ? m[1].toUpperCase() : null
+  if (!m) return null
+  const asin = m[1].toUpperCase()
+  return isValidAsin(asin) ? asin : null
 }
 
 async function resolveRedirect(url: string): Promise<string | null> {
@@ -147,9 +153,8 @@ type SearchJob   = { kind: 'search';   originalUrl: string; keyword: string; nam
 type Job = DirectJob | RedirectJob | SearchJob
 
 function classifyUrl(url: string, name: string): Job | null {
-  // link.amazon[.com]/ASIN — ASIN is the first path segment
-  const linkAmazon = url.match(/link\.amazon(?:\.com)?\/([A-Z0-9]{9,12})(?:[/?#]|$)/i)
-  if (linkAmazon) return { kind: 'direct', originalUrl: url, asin: linkAmazon[1].toUpperCase(), name }
+  // link.amazon short links — follow redirect to get real ASIN from /dp/ path
+  if (/link\.amazon(?:\.com)?/i.test(url)) return { kind: 'redirect', originalUrl: url, name }
 
   if (/amzn\.to|amzn\.in/i.test(url)) return { kind: 'redirect', originalUrl: url, name }
 
@@ -190,6 +195,8 @@ function nameFromLine(url: string, text: string): string {
     .slice(0, 80)
 }
 
+const NON_PRODUCT_RE = /best deals|best offers|vm.?one|download|invoice|\btoday\b|\blist\b/i
+
 function collectJobs(text: string): Job[] {
   const jobs: Job[] = []
   const seen = new Set<string>()
@@ -198,6 +205,7 @@ function collectJobs(text: string): Job[] {
     const clean = url.replace(/[.,;!?)'"\]]+$/, '')
     if (seen.has(clean)) return
     seen.add(clean)
+    if (label && NON_PRODUCT_RE.test(label)) return
     const name = (label || nameFromLine(clean, text)).trim()
     const job = classifyUrl(clean, name)
     if (job) jobs.push(job)
@@ -278,6 +286,17 @@ function inferCategory(jobs: Job[]): { label: string; slug: string } {
 
 // ── Output builder ────────────────────────────────────────────────────────────
 
+const CATEGORY_HASHTAGS: Record<string, string[]> = {
+  'smart+tv':    ['#BestTV2026', '#SmartTV', '#India'],
+  'headphones':  ['#BestHeadphones', '#AudioGear', '#India'],
+  'laptop':      ['#BestLaptops', '#TechIndia', '#India'],
+  'smartphones': ['#BestPhones', '#SmartphoneIndia', '#India'],
+  'speakers':    ['#BestSpeakers', '#AudioIndia', '#India'],
+  'cameras':     ['#BestCamera', '#Photography', '#India'],
+  'keyboards':   ['#BestKeyboard', '#TechDeals', '#India'],
+  'electronics': ['#TechDeals', '#BestDeals', '#India'],
+}
+
 interface ProductLine { name: string; url: string }
 
 function buildOutput(
@@ -287,7 +306,10 @@ function buildOutput(
 ): string {
   const topic      = extractTopic(description)
   const timestamps = extractTimestamps(description)
-  const hashtags   = extractHashtags(description)
+  const extracted  = extractHashtags(description)
+  const hashtags   = extracted.length > 0
+    ? extracted
+    : (CATEGORY_HASHTAGS[category.label] ?? ['#TechDeals', '#BestDeals', '#India'])
 
   const categoryUrl = `https://www.amazon.in/s?k=${category.label}+india&tag=${TAG}`
   const adifyUrl    = `https://adify.store/blog/${category.slug}`
@@ -370,10 +392,10 @@ export async function POST(req: NextRequest) {
         urlToFinalUrl.set(job.originalUrl, buildAsinUrl(asin))
         log.push(`✓ redirect ${job.originalUrl} → ${asin}`)
       } else {
-        // Non-product page (goldbox, category, etc.) → generic deals link
-        const fallback = `https://www.amazon.in/s?k=best+deals+today&tag=${TAG}`
-        urlToFinalUrl.set(job.originalUrl, fallback)
-        log.push(`~ redirect ${job.originalUrl} → no /dp/ — generic deals link`)
+        // No /dp/ found — search by product name if available, else generic deals
+        const kw = job.name ? job.name + ' india' : 'best deals today'
+        urlToFinalUrl.set(job.originalUrl, buildSearchUrl(kw))
+        log.push(`~ redirect ${job.originalUrl} → no /dp/ — search fallback`)
       }
     }
   }
