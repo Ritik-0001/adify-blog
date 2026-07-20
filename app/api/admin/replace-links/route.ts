@@ -260,7 +260,7 @@ function extractTimestamps(text: string): string[] {
 
 function extractHashtags(text: string): string[] {
   const raw = (text.match(/#[a-zA-Z][a-zA-Z0-9_]*/g) ?? [])
-  const unique = [...new Set(raw.map(h => h.toLowerCase()))]
+  const unique = Array.from(new Set(raw.map(h => h.toLowerCase())))
   return unique.filter(h => h !== '#adify').slice(0, 3)
 }
 
