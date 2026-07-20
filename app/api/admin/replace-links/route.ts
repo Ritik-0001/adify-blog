@@ -185,7 +185,7 @@ function nameFromLine(url: string, text: string): string {
   return m[1]
     .replace(/^\s*\d+[.)]\s*/, '')           // strip "1. "
     .replace(/\s*[→:•\-–—]+\s*$/, '')       // strip trailing separators
-    .replace(/[\u{1F300}-\u{1FFFF}]+/gu, '') // strip emoji
+    .replace(/[\uD800-\uDFFF]/g, '')          // strip emoji (surrogate pairs)
     .trim()
     .slice(0, 80)
 }
