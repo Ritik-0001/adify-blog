@@ -57,27 +57,121 @@ function keywordFromAmazonUrl(url: string): string | null {
   return null
 }
 
-// Noise words to strip from Flipkart slugs before searching PA API
-const FK_NOISE =
-  /\b(\d+\s*(?:cm|mm|inch|inches|in|hz|ghz|mhz|gb|tb|mb|ml|litre|liter|kg|w|watt|watts)|ultra[\s-]?hd|full[\s-]?hd|4k|8k|fhd|qhd|uhd|oled|qled|amoled|led|lcd|ips|va|black|white|silver|gold|blue|red|green|grey|gray|with|and|for|the|buy|online)\b/gi
+// Brand names that need specific casing
+const BRAND_CASES: Record<string, string> = {
+  lg: 'LG', tcl: 'TCL', jbl: 'JBL', hp: 'HP', jvc: 'JVC',
+  aoc: 'AOC', vu: 'Vu', mi: 'Mi', boat: 'boAt', oneplus: 'OnePlus',
+  oppo: 'OPPO', poco: 'POCO', iqoo: 'iQOO',
+}
+
+// TV OS / platform names and their display form
+const TV_OS: Record<string, string> = {
+  webos: 'WebOS', tizen: 'Tizen', android: 'Android',
+  vidaa: 'VIDAA', fire: 'Fire TV', google: 'Google TV',
+}
+
+function fkCap(s: string): string {
+  return BRAND_CASES[s.toLowerCase()] ?? (s.charAt(0).toUpperCase() + s.slice(1).toLowerCase())
+}
 
 function keywordFromFlipkartUrl(rawUrl: string): string | null {
-  // Accept both bare (flipkart.com/...) and full (https://www.flipkart.com/...) URLs
   const normalised = /^https?:\/\//i.test(rawUrl) ? rawUrl : `https://${rawUrl}`
   try {
     const u = new URL(normalised)
-    const segments = u.pathname.split('/').filter(Boolean)
+    const parts = u.pathname.split('/').filter(Boolean)
     // Flipkart path: /<product-slug>/p/itm... — slug is always first segment
-    const slug = segments[0]
+    const slug = parts[0]
     if (!slug || slug === 'p' || slug.length <= 3) return null
 
-    const cleaned = slug
-      .replace(/-/g, ' ')
-      .replace(FK_NOISE, ' ')
-      .replace(/\s{2,}/g, ' ')
-      .trim()
+    const segs = slug.split('-').filter(p => p.length > 0)
+    if (segs.length < 2) return slug.replace(/-/g, ' ')
 
-    return cleaned.length > 3 ? cleaned : null
+    const brand = fkCap(segs[0])
+    const isTV = segs.some(s => s.toLowerCase() === 'tv')
+
+    // ── Extract size in inches ─────────────────────────────────────────────
+    // Prefer explicit "N inch(es)" in slug; fall back to converting cm.
+    // Flipkart sometimes writes decimal cm as two segments: "138-68-cm" = 138.68 cm
+    let sizeInch: string | null = null
+    for (let i = 0; i < segs.length - 1; i++) {
+      if (/^\d+$/.test(segs[i]) && /^inch(es)?$/i.test(segs[i + 1])) {
+        sizeInch = segs[i]
+        break
+      }
+    }
+    if (!sizeInch) {
+      for (let i = 0; i < segs.length - 1; i++) {
+        if (/^\d{2,3}$/.test(segs[i])) {
+          const next = segs[i + 1] ?? ''
+          if (next === 'cm') {
+            sizeInch = String(Math.round(parseInt(segs[i]) / 2.54))
+            break
+          }
+          // Decimal format: "138-68-cm"
+          if (/^\d{1,2}$/.test(next) && (segs[i + 2] ?? '') === 'cm') {
+            sizeInch = String(Math.round(parseFloat(`${segs[i]}.${next}`) / 2.54))
+            break
+          }
+        }
+      }
+    }
+
+    // ── TV-specific query: brand + model + size + tech/OS + "Smart TV" ─────
+    if (isTV) {
+      const out: string[] = [brand]
+
+      // Model identifier: 2nd segment if it's a word (not a number/generic)
+      const GENERIC_2ND = new Set(['series', 'tv', 'smart', 'ultra', 'full', 'hd', 'led', 'lcd', 'new', 'cm', 'inch'])
+      const second = segs[1] ?? ''
+      if (second && !/^\d/.test(second) && !GENERIC_2ND.has(second.toLowerCase())) {
+        out.push(fkCap(second))
+      }
+
+      if (sizeInch) out.push(`${sizeInch} inch`)
+
+      // "mini-led" — check adjacent parts
+      const miniIdx = segs.findIndex(s => s.toLowerCase() === 'mini')
+      if (miniIdx !== -1 && (segs[miniIdx + 1] ?? '').toLowerCase() === 'led') {
+        out.push('Mini LED')
+      }
+
+      // OS / platform
+      const osWord = segs.find(s => TV_OS[s.toLowerCase()])
+      if (osWord) out.push(TV_OS[osWord.toLowerCase()])
+
+      out.push('Smart TV')
+      return out.join(' ')
+    }
+
+    // ── Non-TV: brand + up to 3 meaningful words + size ───────────────────
+    const SKIP = new Set([
+      'cm','inch','inches','mm','hz','ghz','mhz','gb','tb','mb','ml','kg','w','watt','watts',
+      'ultra','full','hd','4k','8k','fhd','uhd','qhd','led','lcd','ips','va','oled','amoled','qled',
+      'with','and','for','the','of','buy','online','new','series','edition','ii','iii','iv','vi',
+      'black','white','silver','gold','blue','red','green','grey','gray',
+    ])
+    const UNIT_NEXT = new Set(['cm','inch','inches','mm','gb','tb','hz','mhz','ghz'])
+
+    const out: string[] = [brand]
+    let added = 0
+    for (let i = 1; i < segs.length && added < 3; i++) {
+      const p = segs[i].toLowerCase()
+      if (SKIP.has(p)) continue
+      // Skip bare measurement numbers (e.g. "138" before "cm", "68" as decimal)
+      if (/^\d+$/.test(segs[i])) {
+        const nxt = (segs[i + 1] ?? '').toLowerCase()
+        if (UNIT_NEXT.has(nxt)) continue
+        // Skip decimal fraction of a cm measurement: "138-68-cm"
+        if (/^\d{1,2}$/.test(segs[i]) && (segs[i + 1] ?? '') === 'cm') continue
+        const prev = (segs[i - 1] ?? '').toLowerCase()
+        if (UNIT_NEXT.has(prev)) continue
+      }
+      out.push(fkCap(segs[i]))
+      added++
+    }
+    if (sizeInch) out.push(`${sizeInch} inch`)
+
+    return out.length > 1 ? out.join(' ') : null
   } catch (_) {}
   return null
 }
@@ -91,8 +185,9 @@ type Job = DirectJob | RedirectJob | SearchJob
 
 function classifyUrl(url: string, label: string | null): Job | null {
   // ── link.amazon[.com]/ASIN — ASIN is the first path segment ──────────────
-  // Handles both https://link.amazon/ASIN and bare link.amazon/ASIN
-  const linkAmazon = url.match(/link\.amazon(?:\.com)?\/([A-Z0-9]{10})\b/i)
+  // Handles https://link.amazon/ASIN and bare link.amazon/ASIN
+  // Use ≥9 chars to be tolerant of slightly non-standard IDs
+  const linkAmazon = url.match(/link\.amazon(?:\.com)?\/([A-Z0-9]{9,12})(?:[/?#]|$)/i)
   if (linkAmazon) {
     return { kind: 'direct', originalUrl: url, asin: linkAmazon[1].toUpperCase() }
   }
@@ -266,7 +361,11 @@ export async function POST(req: NextRequest) {
         replacementMap.set(job.originalUrl, buildAsinUrl(asin))
         log.push(`✓ redirect ${job.originalUrl} → ${asin} (via ${fullUrl})`)
       } else {
-        log.push(`✗ redirect ${job.originalUrl} → resolved but no ASIN found in ${fullUrl}`)
+        // Non-product page (goldbox, /b/ category, /gp/ — no /dp/ in URL)
+        // Replace with a generic affiliate search so the tag is still applied
+        const fallback = `https://www.amazon.in/s?k=best+deals+today&tag=${TAG}`
+        replacementMap.set(job.originalUrl, fallback)
+        log.push(`~ redirect ${job.originalUrl} → no ASIN (${fullUrl}) — used generic deals link`)
       }
     }
   }
