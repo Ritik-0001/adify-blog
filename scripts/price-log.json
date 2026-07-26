@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-07-26T04:04:26.515Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "best-200mp-camera-phone-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-32-inch-smart-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-43-inch-smart-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-4k-action-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-50-inch-smart-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-55-inch-smart-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-action-camera-bike-vlogging-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-action-camera-phone-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-action-camera-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-action-camera-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-android-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-antivirus-android-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-antivirus-windows-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-bass-headphones-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-smart-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-concert-photography-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-for-vlogging-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-under-15000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-under-30000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-camera-phone-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceramic-hair-straightener-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-drawing-tablets-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earbuds-under-1500-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earbuds-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earbuds-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earbuds-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earphones-for-calls-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earphones-for-gym-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earphones-for-music-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-back-scrubber-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-bathroom-scrubber-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-beard-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-blending-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-body-scrub-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-cleaning-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-dish-scrubber-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-exfoliating-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-face-brush-for-acne-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-face-brush-for-oily-skin-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-facial-cleansing-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-foot-scrubber-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-foundation-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-hair-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-hair-brush-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-hair-comb-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-kabuki-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-kettle-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-kettles-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-07-19T04:02:19.654Z",
       "updated": [],
       "skipped": [
@@ -915,6 +1122,256 @@
     "best-double-door-refrigerator-india-2026.mdx": {
       "lastChecked": 1784433886827,
       "slug": "best-double-door-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-200mp-camera-phone-india-2026.mdx": {
+      "lastChecked": 1785038666516,
+      "slug": "best-200mp-camera-phone-india-2026",
+      "skipped": "no price table"
+    },
+    "best-32-inch-smart-tv-india-2026.mdx": {
+      "lastChecked": 1785038669520,
+      "slug": "best-32-inch-smart-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-43-inch-smart-tv-india-2026.mdx": {
+      "lastChecked": 1785038672524,
+      "slug": "best-43-inch-smart-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-4k-action-camera-india-2026.mdx": {
+      "lastChecked": 1785038675525,
+      "slug": "best-4k-action-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-50-inch-smart-tv-india-2026.mdx": {
+      "lastChecked": 1785038678526,
+      "slug": "best-50-inch-smart-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-55-inch-smart-tv-india-2026.mdx": {
+      "lastChecked": 1785038681530,
+      "slug": "best-55-inch-smart-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-action-camera-bike-vlogging-india-2026.mdx": {
+      "lastChecked": 1785038684533,
+      "slug": "best-action-camera-bike-vlogging-india-2026",
+      "skipped": "no price table"
+    },
+    "best-action-camera-phone-india-2026.mdx": {
+      "lastChecked": 1785038687537,
+      "slug": "best-action-camera-phone-india-2026",
+      "skipped": "no price table"
+    },
+    "best-action-camera-under-10000-india-2026.mdx": {
+      "lastChecked": 1785038690541,
+      "slug": "best-action-camera-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-action-camera-under-5000-india-2026.mdx": {
+      "lastChecked": 1785038693544,
+      "slug": "best-action-camera-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-android-tv-india-2026.mdx": {
+      "lastChecked": 1785038696547,
+      "slug": "best-android-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-antivirus-android-india-2026.mdx": {
+      "lastChecked": 1785038699551,
+      "slug": "best-antivirus-android-india-2026",
+      "skipped": "no price table"
+    },
+    "best-antivirus-windows-india-2026.mdx": {
+      "lastChecked": 1785038702554,
+      "slug": "best-antivirus-windows-india-2026",
+      "skipped": "no price table"
+    },
+    "best-bass-headphones-under-3000-india-2026.mdx": {
+      "lastChecked": 1785038705558,
+      "slug": "best-bass-headphones-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-smart-tv-india-2026.mdx": {
+      "lastChecked": 1785038708562,
+      "slug": "best-budget-smart-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-concert-photography-india-2026.mdx": {
+      "lastChecked": 1785038711565,
+      "slug": "best-camera-phone-concert-photography-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-for-vlogging-india-2026.mdx": {
+      "lastChecked": 1785038714569,
+      "slug": "best-camera-phone-for-vlogging-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-under-10000-india-2026.mdx": {
+      "lastChecked": 1785038717572,
+      "slug": "best-camera-phone-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-under-15000-india-2026.mdx": {
+      "lastChecked": 1785038720576,
+      "slug": "best-camera-phone-under-15000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-under-20000-india-2026.mdx": {
+      "lastChecked": 1785038723579,
+      "slug": "best-camera-phone-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-under-30000-india-2026.mdx": {
+      "lastChecked": 1785038726582,
+      "slug": "best-camera-phone-under-30000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-camera-phone-under-50000-india-2026.mdx": {
+      "lastChecked": 1785038729586,
+      "slug": "best-camera-phone-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceramic-hair-straightener-india-2026.mdx": {
+      "lastChecked": 1785038732588,
+      "slug": "best-ceramic-hair-straightener-india-2026",
+      "skipped": "no price table"
+    },
+    "best-drawing-tablets-india-2026.mdx": {
+      "lastChecked": 1785038735592,
+      "slug": "best-drawing-tablets-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earbuds-under-1500-india-2026.mdx": {
+      "lastChecked": 1785038738595,
+      "slug": "best-earbuds-under-1500-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earbuds-under-2000-india-2026.mdx": {
+      "lastChecked": 1785038741599,
+      "slug": "best-earbuds-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earbuds-under-3000-india-2026.mdx": {
+      "lastChecked": 1785038744602,
+      "slug": "best-earbuds-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earbuds-under-5000-india-2026.mdx": {
+      "lastChecked": 1785038747606,
+      "slug": "best-earbuds-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earphones-for-calls-india-2026.mdx": {
+      "lastChecked": 1785038750609,
+      "slug": "best-earphones-for-calls-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earphones-for-gym-india-2026.mdx": {
+      "lastChecked": 1785038753613,
+      "slug": "best-earphones-for-gym-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earphones-for-music-india-2026.mdx": {
+      "lastChecked": 1785038756616,
+      "slug": "best-earphones-for-music-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-back-scrubber-india-2026.mdx": {
+      "lastChecked": 1785038759620,
+      "slug": "best-electric-back-scrubber-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-bathroom-scrubber-india-2026.mdx": {
+      "lastChecked": 1785038762623,
+      "slug": "best-electric-bathroom-scrubber-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-beard-brush-india-2026.mdx": {
+      "lastChecked": 1785038765627,
+      "slug": "best-electric-beard-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-blending-brush-india-2026.mdx": {
+      "lastChecked": 1785038768630,
+      "slug": "best-electric-blending-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-body-scrub-brush-india-2026.mdx": {
+      "lastChecked": 1785038771634,
+      "slug": "best-electric-body-scrub-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-cleaning-brush-india-2026.mdx": {
+      "lastChecked": 1785038774638,
+      "slug": "best-electric-cleaning-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-dish-scrubber-india-2026.mdx": {
+      "lastChecked": 1785038777641,
+      "slug": "best-electric-dish-scrubber-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-exfoliating-brush-india-2026.mdx": {
+      "lastChecked": 1785038780645,
+      "slug": "best-electric-exfoliating-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-face-brush-for-acne-india-2026.mdx": {
+      "lastChecked": 1785038783648,
+      "slug": "best-electric-face-brush-for-acne-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-face-brush-for-oily-skin-india-2026.mdx": {
+      "lastChecked": 1785038786652,
+      "slug": "best-electric-face-brush-for-oily-skin-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-facial-cleansing-brush-india-2026.mdx": {
+      "lastChecked": 1785038789655,
+      "slug": "best-electric-facial-cleansing-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-foot-scrubber-india-2026.mdx": {
+      "lastChecked": 1785038792659,
+      "slug": "best-electric-foot-scrubber-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-foundation-brush-india-2026.mdx": {
+      "lastChecked": 1785038795662,
+      "slug": "best-electric-foundation-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-hair-brush-india-2026.mdx": {
+      "lastChecked": 1785038798666,
+      "slug": "best-electric-hair-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-hair-brush-under-2000-india-2026.mdx": {
+      "lastChecked": 1785038801669,
+      "slug": "best-electric-hair-brush-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-hair-comb-india-2026.mdx": {
+      "lastChecked": 1785038804673,
+      "slug": "best-electric-hair-comb-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-kabuki-brush-india-2026.mdx": {
+      "lastChecked": 1785038807676,
+      "slug": "best-electric-kabuki-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-kettle-india-2026.mdx": {
+      "lastChecked": 1785038810679,
+      "slug": "best-electric-kettle-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-kettles-india-2026.mdx": {
+      "lastChecked": 1785038813683,
+      "slug": "best-electric-kettles-india-2026",
       "skipped": "no price table"
     }
   }
