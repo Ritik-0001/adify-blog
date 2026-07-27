@@ -2,44 +2,68 @@
 /**
  * publish-next.js
  *
- * Moves the oldest MDX file from /posts/queue/ to /posts/.
- * Triggered by the GitHub Action on a schedule or via n8n → GitHub API.
+ * Moves the next MDX file from /posts/queue/ to /posts/.
+ * Priority order: slugs listed in posts/queue/priority.txt come first,
+ * then remaining files sorted oldest-mtime-first.
+ * Always stamps the frontmatter date to today so the post appears at the top.
  */
 
-const fs = require('fs')
+const fs   = require('fs')
 const path = require('path')
 
-const queueDir = path.join(__dirname, '..', 'posts', 'queue')
-const postsDir = path.join(__dirname, '..', 'posts')
+const queueDir    = path.join(__dirname, '..', 'posts', 'queue')
+const postsDir    = path.join(__dirname, '..', 'posts')
+const priorityFile = path.join(queueDir, 'priority.txt')
 
 if (!fs.existsSync(queueDir)) {
   console.log('Queue directory not found — nothing to do.')
   process.exit(0)
 }
 
-// Collect all .mdx files in the queue, sorted oldest-first (FIFO)
-const queued = fs
+// Build set of all queued .mdx files
+const allQueued = fs
   .readdirSync(queueDir)
   .filter((f) => f.endsWith('.mdx'))
   .map((f) => {
     const fullPath = path.join(queueDir, f)
-    return { name: f, fullPath, mtime: fs.statSync(fullPath).mtimeMs }
+    return { name: f, slug: f.replace(/\.mdx$/, ''), fullPath, mtime: fs.statSync(fullPath).mtimeMs }
   })
-  .sort((a, b) => a.mtime - b.mtime)
 
-if (queued.length === 0) {
+if (allQueued.length === 0) {
   console.log('Queue is empty — nothing to publish.')
   process.exit(0)
 }
 
-// Skip any queued files that already exist in /posts/ (conflict resolution)
+// Build ordered list: priority slugs first, then by mtime ascending
+let prioritySlugs = []
+if (fs.existsSync(priorityFile)) {
+  prioritySlugs = fs
+    .readFileSync(priorityFile, 'utf8')
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith('#'))
+}
+
+const queueMap = new Map(allQueued.map((f) => [f.slug, f]))
+const ordered  = []
+
+// Add priority slugs that are still in queue
+for (const slug of prioritySlugs) {
+  if (queueMap.has(slug)) ordered.push(queueMap.get(slug))
+}
+
+// Then remaining files sorted oldest-first
+const prioritySet = new Set(prioritySlugs)
+const remaining   = allQueued
+  .filter((f) => !prioritySet.has(f.slug))
+  .sort((a, b) => a.mtime - b.mtime)
+ordered.push(...remaining)
+
+// Skip conflicts (already in /posts/)
 const conflicts = []
-const next = queued.find((f) => {
+const next = ordered.find((f) => {
   const dest = path.join(postsDir, f.name)
-  if (fs.existsSync(dest)) {
-    conflicts.push(f)
-    return false
-  }
+  if (fs.existsSync(dest)) { conflicts.push(f); return false }
   return true
 })
 
@@ -55,8 +79,22 @@ if (!next) {
   process.exit(0)
 }
 
-const dest = path.join(postsDir, next.name)
-fs.renameSync(next.fullPath, dest)
+// Move file and stamp today's date in frontmatter
+const dest    = path.join(postsDir, next.name)
+const today   = new Date().toISOString().split('T')[0]
+let   content = fs.readFileSync(next.fullPath, 'utf8')
 
-console.log(`Published: posts/queue/${next.name} → posts/${next.name}`)
-console.log(`Remaining in queue: ${queued.length - conflicts.length - 1}`)
+// Replace existing date field in frontmatter (between --- delimiters)
+content = content.replace(/^(date:\s*)["']?[\d-]+["']?/m, `$1"${today}"`)
+
+fs.writeFileSync(dest, content)
+fs.unlinkSync(next.fullPath)
+
+// Remove the published slug from priority.txt if present
+if (fs.existsSync(priorityFile) && prioritySlugs.includes(next.slug)) {
+  const updated = prioritySlugs.filter((s) => s !== next.slug).join('\n') + '\n'
+  fs.writeFileSync(priorityFile, updated)
+}
+
+console.log(`Published: posts/queue/${next.name} → posts/${next.name}  (date → ${today})`)
+console.log(`Remaining in queue: ${allQueued.length - conflicts.length - 1}`)

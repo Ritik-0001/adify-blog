@@ -3,7 +3,52 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllPosts, getPostBySlug } from '@/lib/posts'
+import { getAllPosts, getPostBySlug, type Post } from '@/lib/posts'
+
+function RelatedPosts({ current }: { current: Post }) {
+  const all = getAllPosts()
+  const related = all
+    .filter(
+      (p) =>
+        p.slug !== current.slug &&
+        p.frontmatter.category === current.frontmatter.category
+    )
+    .slice(0, 3)
+
+  if (related.length === 0) return null
+
+  return (
+    <div className="mt-12 pt-8 border-t border-zinc-800">
+      <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-4">
+        Related Reviews
+      </h2>
+      <div className="flex flex-col gap-3">
+        {related.map((p) => (
+          <Link
+            key={p.slug}
+            href={`/blog/${p.slug}`}
+            className="group flex items-start gap-3 p-3 rounded-xl hover:bg-zinc-900 border border-transparent hover:border-zinc-800 transition-all"
+          >
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-zinc-200 group-hover:text-white transition-colors line-clamp-2">
+                {p.frontmatter.title}
+              </p>
+              <p className="text-xs text-zinc-500 mt-0.5 line-clamp-1">
+                {p.frontmatter.description}
+              </p>
+            </div>
+            <svg
+              className="w-4 h-4 text-zinc-600 group-hover:text-orange-400 shrink-0 mt-0.5 transition-colors"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const mdxComponents = {
   table: ({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
@@ -223,6 +268,9 @@ export default function PostPage({ params }: PostPageProps) {
           </p>
         </div>
       </div>
+
+      {/* Related posts */}
+      <RelatedPosts current={post} />
 
     </article>
   )
