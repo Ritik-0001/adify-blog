@@ -1,51 +1,28 @@
-# High-value posts published first — edit freely, one slug per line
-# Removed slugs are sent to mtime-based fallback queue
-
-# --- NEW handwritten posts (high-ticket, publish immediately) ---
-best-4k-oled-tv-under-1-lakh-india-2026
 best-gaming-laptop-under-1-lakh-india-2026
 best-standing-desk-india-2026
 best-ergonomic-office-chair-under-25000-india-2026
 best-mirrorless-camera-for-youtube-india-2026
 best-robot-vacuum-for-indian-homes-2026
-
-# --- TVs (high ticket, high search volume) ---
 best-oled-tv-india-2026
 best-smart-tv-under-20000-india-2026
 best-smart-tv-under-30000-india-2026
 best-tv-for-gaming-india-2026
-
-# --- Laptops (consistent demand, good commission) ---
 best-laptop-for-students-india-2026
 best-laptop-for-video-editing-india-2026
 best-laptop-under-40000-india-2026
 best-laptop-under-50000-india-2026
-
-# --- Audio (high search intent) ---
 best-noise-cancelling-headphones-india-2026
 best-tws-earbuds-under-2000-india-2026
-
-# --- Software / VPN (high margin products) ---
 best-vpn-india-2026
-
-# --- Water purifiers (evergreen India demand) ---
 best-water-purifier-for-borewell-water-india-2026
 best-water-purifier-for-hard-water-india-2026
 best-water-purifier-under-10000-india-2026
 best-water-purifier-under-15000-india-2026
 best-water-purifier-under-5000-india-2026
 best-water-purifier-without-electricity-india-2026
-
-# --- Webcams ---
 best-webcam-for-streaming-india-2026
-
-# --- Air fryer ---
 best-air-fryer-under-3000-india-2026
-
-# --- Smartwatch ---
 best-smartwatch-under-5000-india-2026
-
-# --- Low priority: personal care / beauty (low ticket) ---
 best-hair-curler-india-2026
 best-hot-air-brush-india-2026
 best-sonic-toothbrush-india-2026
