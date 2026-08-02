@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-08-02T04:02:31.766Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "best-4k-oled-tv-under-1-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-makeup-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-nail-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-pedicure-brush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scalp-massager-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooter-for-daily-commute-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooter-for-women-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooter-under-1-5-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooter-under-1-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooters-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-shaver-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-shoe-cleaner-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-tile-cleaner-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-adults-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-braces-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-cavity-prevention-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-dentist-recommended-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-dry-mouth-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-braces-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-elderly-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-family-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-kids-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-sensitive-gums-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-for-whitening-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-gum-disease-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-men-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-plaque-removal-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-receding-gums-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-replacement-heads-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-sensitive-teeth-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-tongue-cleaning-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-under-1000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-under-500-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-whitening-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrush-women-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-toothbrushes-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-elliptical-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-energy-efficient-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-epilator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-back-pain-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-under-15000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chairs-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-office-chair-under-25000-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-07-26T04:04:26.515Z",
       "updated": [],
       "skipped": [
@@ -1372,6 +1579,256 @@
     "best-electric-kettles-india-2026.mdx": {
       "lastChecked": 1785038813683,
       "slug": "best-electric-kettles-india-2026",
+      "skipped": "no price table"
+    },
+    "best-4k-oled-tv-under-1-lakh-india-2026.mdx": {
+      "lastChecked": 1785643351766,
+      "slug": "best-4k-oled-tv-under-1-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-makeup-brush-india-2026.mdx": {
+      "lastChecked": 1785643354770,
+      "slug": "best-electric-makeup-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-nail-brush-india-2026.mdx": {
+      "lastChecked": 1785643357773,
+      "slug": "best-electric-nail-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-pedicure-brush-india-2026.mdx": {
+      "lastChecked": 1785643360774,
+      "slug": "best-electric-pedicure-brush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scalp-massager-india-2026.mdx": {
+      "lastChecked": 1785643363778,
+      "slug": "best-electric-scalp-massager-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooter-for-daily-commute-india-2026.mdx": {
+      "lastChecked": 1785643366781,
+      "slug": "best-electric-scooter-for-daily-commute-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooter-for-women-india-2026.mdx": {
+      "lastChecked": 1785643369784,
+      "slug": "best-electric-scooter-for-women-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooter-under-1-5-lakh-india-2026.mdx": {
+      "lastChecked": 1785643372788,
+      "slug": "best-electric-scooter-under-1-5-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooter-under-1-lakh-india-2026.mdx": {
+      "lastChecked": 1785643375792,
+      "slug": "best-electric-scooter-under-1-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooters-india-2026.mdx": {
+      "lastChecked": 1785643378795,
+      "slug": "best-electric-scooters-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-shaver-india-2026.mdx": {
+      "lastChecked": 1785643381799,
+      "slug": "best-electric-shaver-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-shoe-cleaner-india-2026.mdx": {
+      "lastChecked": 1785643384802,
+      "slug": "best-electric-shoe-cleaner-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-tile-cleaner-india-2026.mdx": {
+      "lastChecked": 1785643387806,
+      "slug": "best-electric-tile-cleaner-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-adults-india-2026.mdx": {
+      "lastChecked": 1785643390809,
+      "slug": "best-electric-toothbrush-adults-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-braces-india-2026.mdx": {
+      "lastChecked": 1785643393812,
+      "slug": "best-electric-toothbrush-braces-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-cavity-prevention-india-2026.mdx": {
+      "lastChecked": 1785643396814,
+      "slug": "best-electric-toothbrush-cavity-prevention-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-dentist-recommended-india-2026.mdx": {
+      "lastChecked": 1785643399818,
+      "slug": "best-electric-toothbrush-dentist-recommended-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-dry-mouth-india-2026.mdx": {
+      "lastChecked": 1785643402822,
+      "slug": "best-electric-toothbrush-dry-mouth-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-braces-india-2026.mdx": {
+      "lastChecked": 1785643405825,
+      "slug": "best-electric-toothbrush-for-braces-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-elderly-india-2026.mdx": {
+      "lastChecked": 1785643408829,
+      "slug": "best-electric-toothbrush-for-elderly-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-family-india-2026.mdx": {
+      "lastChecked": 1785643411830,
+      "slug": "best-electric-toothbrush-for-family-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-kids-india-2026.mdx": {
+      "lastChecked": 1785643414834,
+      "slug": "best-electric-toothbrush-for-kids-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-sensitive-gums-india-2026.mdx": {
+      "lastChecked": 1785643417837,
+      "slug": "best-electric-toothbrush-for-sensitive-gums-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-for-whitening-india-2026.mdx": {
+      "lastChecked": 1785643420841,
+      "slug": "best-electric-toothbrush-for-whitening-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-gum-disease-india-2026.mdx": {
+      "lastChecked": 1785643423844,
+      "slug": "best-electric-toothbrush-gum-disease-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-men-india-2026.mdx": {
+      "lastChecked": 1785643426847,
+      "slug": "best-electric-toothbrush-men-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-plaque-removal-india-2026.mdx": {
+      "lastChecked": 1785643429851,
+      "slug": "best-electric-toothbrush-plaque-removal-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-receding-gums-india-2026.mdx": {
+      "lastChecked": 1785643432854,
+      "slug": "best-electric-toothbrush-receding-gums-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-replacement-heads-india-2026.mdx": {
+      "lastChecked": 1785643435857,
+      "slug": "best-electric-toothbrush-replacement-heads-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-sensitive-teeth-india-2026.mdx": {
+      "lastChecked": 1785643438861,
+      "slug": "best-electric-toothbrush-sensitive-teeth-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-tongue-cleaning-india-2026.mdx": {
+      "lastChecked": 1785643441864,
+      "slug": "best-electric-toothbrush-tongue-cleaning-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-under-1000-india-2026.mdx": {
+      "lastChecked": 1785643444868,
+      "slug": "best-electric-toothbrush-under-1000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-under-2000-india-2026.mdx": {
+      "lastChecked": 1785643447871,
+      "slug": "best-electric-toothbrush-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-under-3000-india-2026.mdx": {
+      "lastChecked": 1785643450875,
+      "slug": "best-electric-toothbrush-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-under-500-india-2026.mdx": {
+      "lastChecked": 1785643453879,
+      "slug": "best-electric-toothbrush-under-500-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-under-5000-india-2026.mdx": {
+      "lastChecked": 1785643456882,
+      "slug": "best-electric-toothbrush-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-whitening-india-2026.mdx": {
+      "lastChecked": 1785643459886,
+      "slug": "best-electric-toothbrush-whitening-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrush-women-india-2026.mdx": {
+      "lastChecked": 1785643462889,
+      "slug": "best-electric-toothbrush-women-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-toothbrushes-india-2026.mdx": {
+      "lastChecked": 1785643465893,
+      "slug": "best-electric-toothbrushes-india-2026",
+      "skipped": "no price table"
+    },
+    "best-elliptical-machine-india-2026.mdx": {
+      "lastChecked": 1785643468896,
+      "slug": "best-elliptical-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-energy-efficient-refrigerator-india-2026.mdx": {
+      "lastChecked": 1785643471900,
+      "slug": "best-energy-efficient-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-epilator-india-2026.mdx": {
+      "lastChecked": 1785643474903,
+      "slug": "best-epilator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-back-pain-india-2026.mdx": {
+      "lastChecked": 1785643477906,
+      "slug": "best-ergonomic-chair-back-pain-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-india-2026.mdx": {
+      "lastChecked": 1785643480910,
+      "slug": "best-ergonomic-chair-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-under-10000-india-2026.mdx": {
+      "lastChecked": 1785643483913,
+      "slug": "best-ergonomic-chair-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-under-15000-india-2026.mdx": {
+      "lastChecked": 1785643486916,
+      "slug": "best-ergonomic-chair-under-15000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-under-20000-india-2026.mdx": {
+      "lastChecked": 1785643489920,
+      "slug": "best-ergonomic-chair-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-under-5000-india-2026.mdx": {
+      "lastChecked": 1785643492923,
+      "slug": "best-ergonomic-chair-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chairs-india-2026.mdx": {
+      "lastChecked": 1785643495927,
+      "slug": "best-ergonomic-chairs-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-office-chair-under-25000-india-2026.mdx": {
+      "lastChecked": 1785643498930,
+      "slug": "best-ergonomic-office-chair-under-25000-india-2026",
       "skipped": "no price table"
     }
   }
