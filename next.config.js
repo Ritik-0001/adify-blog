@@ -7,6 +7,16 @@ const nextConfig = {
     // Next.js loads it via native Node require() instead.
     serverComponentsExternalPackages: ['amazon-paapi'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.adify.store' }],
+        destination: 'https://adify.store/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
