@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-08-23T02:07:47.438Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "best-1-5-ton-inverter-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-amd-laptop-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-anc-headphones-for-flight-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-antivirus-for-windows-11-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dumbbells-for-home-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-height-adjustable-desk-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-home-gym-setup-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-home-gym-setup-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-intel-laptop-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-cooling-pad-for-gaming-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-cooling-pad-under-1000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-cooling-pad-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-cooling-pads-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-ai-and-ml-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-app-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-arts-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-backend-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-ca-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-coding-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-cybersecurity-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-data-science-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-engineering-students-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-engineering-students-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-engineering-students-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-game-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-mba-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-medical-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-online-classes-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-programming-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-python-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-video-editing-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-web-development-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-stand-with-cooling-fan-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-stands-ergonomic-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-100000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-150000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-200000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-30000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-60000-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-70000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-80000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-work-from-home-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-amazon-great-indian-festival-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-developers-2025",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-under-30000-festive-sale-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-08-16T02:03:10.645Z",
       "updated": [],
       "skipped": [
@@ -2743,6 +2950,256 @@
     "best-laptop-cooling-pad-for-17-inch-india-2026.mdx": {
       "lastChecked": 1786845937814,
       "slug": "best-laptop-cooling-pad-for-17-inch-india-2026",
+      "skipped": "no price table"
+    },
+    "best-1-5-ton-inverter-ac-india-2026.mdx": {
+      "lastChecked": 1787450867438,
+      "slug": "best-1-5-ton-inverter-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-amd-laptop-under-60000-india-2026.mdx": {
+      "lastChecked": 1787450870442,
+      "slug": "best-amd-laptop-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-anc-headphones-for-flight-india-2026.mdx": {
+      "lastChecked": 1787450873446,
+      "slug": "best-anc-headphones-for-flight-india-2026",
+      "skipped": "no price table"
+    },
+    "best-antivirus-for-windows-11-india-2026.mdx": {
+      "lastChecked": 1787450876447,
+      "slug": "best-antivirus-for-windows-11-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dumbbells-for-home-india-2026.mdx": {
+      "lastChecked": 1787450879450,
+      "slug": "best-dumbbells-for-home-india-2026",
+      "skipped": "no price table"
+    },
+    "best-height-adjustable-desk-india-2026.mdx": {
+      "lastChecked": 1787450882454,
+      "slug": "best-height-adjustable-desk-india-2026",
+      "skipped": "no price table"
+    },
+    "best-home-gym-setup-under-20000-india-2026.mdx": {
+      "lastChecked": 1787450885457,
+      "slug": "best-home-gym-setup-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-home-gym-setup-under-50000-india-2026.mdx": {
+      "lastChecked": 1787450888461,
+      "slug": "best-home-gym-setup-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-intel-laptop-under-60000-india-2026.mdx": {
+      "lastChecked": 1787450891465,
+      "slug": "best-intel-laptop-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-cooling-pad-for-gaming-india-2026.mdx": {
+      "lastChecked": 1787450894468,
+      "slug": "best-laptop-cooling-pad-for-gaming-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-cooling-pad-under-1000-india-2026.mdx": {
+      "lastChecked": 1787450897471,
+      "slug": "best-laptop-cooling-pad-under-1000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-cooling-pad-under-2000-india-2026.mdx": {
+      "lastChecked": 1787450900474,
+      "slug": "best-laptop-cooling-pad-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-cooling-pads-india-2026.mdx": {
+      "lastChecked": 1787450903478,
+      "slug": "best-laptop-cooling-pads-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-ai-and-ml-development-india-2026.mdx": {
+      "lastChecked": 1787450906482,
+      "slug": "best-laptop-for-ai-and-ml-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-app-development-india-2026.mdx": {
+      "lastChecked": 1787450909485,
+      "slug": "best-laptop-for-app-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-arts-students-india-2026.mdx": {
+      "lastChecked": 1787450912489,
+      "slug": "best-laptop-for-arts-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-backend-development-india-2026.mdx": {
+      "lastChecked": 1787450915492,
+      "slug": "best-laptop-for-backend-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-ca-students-india-2026.mdx": {
+      "lastChecked": 1787450918496,
+      "slug": "best-laptop-for-ca-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-coding-india-2026.mdx": {
+      "lastChecked": 1787450921500,
+      "slug": "best-laptop-for-coding-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-cybersecurity-india-2026.mdx": {
+      "lastChecked": 1787450924503,
+      "slug": "best-laptop-for-cybersecurity-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-data-science-india-2026.mdx": {
+      "lastChecked": 1787450927507,
+      "slug": "best-laptop-for-data-science-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-engineering-students-under-40000-india-2026.mdx": {
+      "lastChecked": 1787450930510,
+      "slug": "best-laptop-for-engineering-students-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-engineering-students-under-50000-india-2026.mdx": {
+      "lastChecked": 1787450933514,
+      "slug": "best-laptop-for-engineering-students-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-engineering-students-under-60000-india-2026.mdx": {
+      "lastChecked": 1787450936517,
+      "slug": "best-laptop-for-engineering-students-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-game-development-india-2026.mdx": {
+      "lastChecked": 1787450939521,
+      "slug": "best-laptop-for-game-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-mba-students-india-2026.mdx": {
+      "lastChecked": 1787450942525,
+      "slug": "best-laptop-for-mba-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-medical-students-india-2026.mdx": {
+      "lastChecked": 1787450945528,
+      "slug": "best-laptop-for-medical-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-online-classes-india-2026.mdx": {
+      "lastChecked": 1787450948532,
+      "slug": "best-laptop-for-online-classes-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-programming-india-2026.mdx": {
+      "lastChecked": 1787450951535,
+      "slug": "best-laptop-for-programming-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-python-development-india-2026.mdx": {
+      "lastChecked": 1787450954539,
+      "slug": "best-laptop-for-python-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-students-india-2026.mdx": {
+      "lastChecked": 1787450957542,
+      "slug": "best-laptop-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-video-editing-india-2026.mdx": {
+      "lastChecked": 1787450960546,
+      "slug": "best-laptop-for-video-editing-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-web-development-india-2026.mdx": {
+      "lastChecked": 1787450963549,
+      "slug": "best-laptop-for-web-development-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-stand-with-cooling-fan-india-2026.mdx": {
+      "lastChecked": 1787450966553,
+      "slug": "best-laptop-stand-with-cooling-fan-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-stands-ergonomic-india-2026.mdx": {
+      "lastChecked": 1787450969556,
+      "slug": "best-laptop-stands-ergonomic-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-100000-india-2026.mdx": {
+      "lastChecked": 1787450972559,
+      "slug": "best-laptop-under-100000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-150000-india-2026.mdx": {
+      "lastChecked": 1787450975563,
+      "slug": "best-laptop-under-150000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-200000-india-2026.mdx": {
+      "lastChecked": 1787450978566,
+      "slug": "best-laptop-under-200000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-30000-india-2026.mdx": {
+      "lastChecked": 1787450981569,
+      "slug": "best-laptop-under-30000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-40000-india-2026.mdx": {
+      "lastChecked": 1787450984573,
+      "slug": "best-laptop-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-50000-india-2026.mdx": {
+      "lastChecked": 1787450987576,
+      "slug": "best-laptop-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-60000-for-students-india-2026.mdx": {
+      "lastChecked": 1787450990580,
+      "slug": "best-laptop-under-60000-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-60000-india-2026.mdx": {
+      "lastChecked": 1787450993583,
+      "slug": "best-laptop-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-70000-india-2026.mdx": {
+      "lastChecked": 1787450996587,
+      "slug": "best-laptop-under-70000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-80000-india-2026.mdx": {
+      "lastChecked": 1787450999591,
+      "slug": "best-laptop-under-80000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-work-from-home-india-2026.mdx": {
+      "lastChecked": 1787451002594,
+      "slug": "best-laptop-work-from-home-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptops-amazon-great-indian-festival-2026.mdx": {
+      "lastChecked": 1787451005598,
+      "slug": "best-laptops-amazon-great-indian-festival-2026",
+      "skipped": "no price table"
+    },
+    "best-laptops-developers-2025.mdx": {
+      "lastChecked": 1787451008601,
+      "slug": "best-laptops-developers-2025",
+      "skipped": "no price table"
+    },
+    "best-laptops-for-students-india-2026.mdx": {
+      "lastChecked": 1787451011604,
+      "slug": "best-laptops-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptops-under-30000-festive-sale-india-2026.mdx": {
+      "lastChecked": 1787451014608,
+      "slug": "best-laptops-under-30000-festive-sale-india-2026",
       "skipped": "no price table"
     }
   }
