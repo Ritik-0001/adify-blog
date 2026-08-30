@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-08-30T05:35:49.388Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "amazon-great-indian-festival-best-deals-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-purifier-for-bedroom-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-purifier-for-winter-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-air-purifier-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-apple-macbook-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-asus-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-bluetooth-speaker-india-diwali-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dishwasher-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-gift-for-husband-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-gift-for-parents-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-gift-under-1000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-gift-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-earbuds-under-3000-india-diwali-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-blanket-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-standing-desk-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-office-chair-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-fan-heater-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-fitness-tracker-india-diwali-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-geyser-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-geyser-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-headphones-under-5000-india-diwali-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-home-theatre-system-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-hp-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-immersion-rod-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-instant-geyser-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-juicer-mixer-grinder-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-college-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-50000-india-diwali-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-under-50000-festive-sale-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptops-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laser-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laser-printer-under-15000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-led-desk-lamps-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-lenovo-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-lightweight-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-linux-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-long-range-electric-scooter-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-massage-gun-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mechanical-keyboard-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mechanical-keyboards-programmers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mesh-office-chair-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mesh-wifi-system-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-microwave-oven-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-microwave-ovens-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mini-hair-straightener-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirror-dash-cam-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-for-beginners-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-for-video-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-for-youtube-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-under-1-lakh-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-08-23T02:07:47.438Z",
       "updated": [],
       "skipped": [
@@ -3200,6 +3407,256 @@
     "best-laptops-under-30000-festive-sale-india-2026.mdx": {
       "lastChecked": 1787451014608,
       "slug": "best-laptops-under-30000-festive-sale-india-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-best-deals-2026.mdx": {
+      "lastChecked": 1788068149389,
+      "slug": "amazon-great-indian-festival-best-deals-2026",
+      "skipped": "no price table"
+    },
+    "best-air-purifier-for-bedroom-india-2026.mdx": {
+      "lastChecked": 1788068152393,
+      "slug": "best-air-purifier-for-bedroom-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-purifier-for-winter-india-2026.mdx": {
+      "lastChecked": 1788068155397,
+      "slug": "best-air-purifier-for-winter-india-2026",
+      "skipped": "no price table"
+    },
+    "best-air-purifier-under-10000-india-2026.mdx": {
+      "lastChecked": 1788068158398,
+      "slug": "best-air-purifier-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-apple-macbook-for-students-india-2026.mdx": {
+      "lastChecked": 1788068161401,
+      "slug": "best-apple-macbook-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-asus-laptop-india-2026.mdx": {
+      "lastChecked": 1788068164405,
+      "slug": "best-asus-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-bluetooth-speaker-india-diwali-2026.mdx": {
+      "lastChecked": 1788068167409,
+      "slug": "best-bluetooth-speaker-india-diwali-2026",
+      "skipped": "no price table"
+    },
+    "best-dishwasher-india-2026.mdx": {
+      "lastChecked": 1788068170412,
+      "slug": "best-dishwasher-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-gift-for-husband-india-2026.mdx": {
+      "lastChecked": 1788068173416,
+      "slug": "best-diwali-gift-for-husband-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-gift-for-parents-india-2026.mdx": {
+      "lastChecked": 1788068176420,
+      "slug": "best-diwali-gift-for-parents-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-gift-under-1000-india-2026.mdx": {
+      "lastChecked": 1788068179423,
+      "slug": "best-diwali-gift-under-1000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-gift-under-5000-india-2026.mdx": {
+      "lastChecked": 1788068182427,
+      "slug": "best-diwali-gift-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-earbuds-under-3000-india-diwali-2026.mdx": {
+      "lastChecked": 1788068185428,
+      "slug": "best-earbuds-under-3000-india-diwali-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-blanket-india-2026.mdx": {
+      "lastChecked": 1788068188432,
+      "slug": "best-electric-blanket-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-standing-desk-india-2026.mdx": {
+      "lastChecked": 1788068191435,
+      "slug": "best-electric-standing-desk-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-office-chair-under-20000-india-2026.mdx": {
+      "lastChecked": 1788068194439,
+      "slug": "best-ergonomic-office-chair-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-fan-heater-india-2026.mdx": {
+      "lastChecked": 1788068197443,
+      "slug": "best-fan-heater-india-2026",
+      "skipped": "no price table"
+    },
+    "best-fitness-tracker-india-diwali-2026.mdx": {
+      "lastChecked": 1788068200446,
+      "slug": "best-fitness-tracker-india-diwali-2026",
+      "skipped": "no price table"
+    },
+    "best-geyser-india-2026.mdx": {
+      "lastChecked": 1788068203450,
+      "slug": "best-geyser-india-2026",
+      "skipped": "no price table"
+    },
+    "best-geyser-under-5000-india-2026.mdx": {
+      "lastChecked": 1788068206453,
+      "slug": "best-geyser-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-headphones-under-5000-india-diwali-2026.mdx": {
+      "lastChecked": 1788068209457,
+      "slug": "best-headphones-under-5000-india-diwali-2026",
+      "skipped": "no price table"
+    },
+    "best-home-theatre-system-india-2026.mdx": {
+      "lastChecked": 1788068212461,
+      "slug": "best-home-theatre-system-india-2026",
+      "skipped": "no price table"
+    },
+    "best-hp-laptop-india-2026.mdx": {
+      "lastChecked": 1788068215464,
+      "slug": "best-hp-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-immersion-rod-india-2026.mdx": {
+      "lastChecked": 1788068218468,
+      "slug": "best-immersion-rod-india-2026",
+      "skipped": "no price table"
+    },
+    "best-instant-geyser-india-2026.mdx": {
+      "lastChecked": 1788068221471,
+      "slug": "best-instant-geyser-india-2026",
+      "skipped": "no price table"
+    },
+    "best-juicer-mixer-grinder-india-2026.mdx": {
+      "lastChecked": 1788068224475,
+      "slug": "best-juicer-mixer-grinder-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-college-students-india-2026.mdx": {
+      "lastChecked": 1788068227478,
+      "slug": "best-laptop-for-college-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-50000-india-diwali-2026.mdx": {
+      "lastChecked": 1788068230482,
+      "slug": "best-laptop-under-50000-india-diwali-2026",
+      "skipped": "no price table"
+    },
+    "best-laptops-under-50000-festive-sale-india-2026.mdx": {
+      "lastChecked": 1788068233485,
+      "slug": "best-laptops-under-50000-festive-sale-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptops-under-60000-india-2026.mdx": {
+      "lastChecked": 1788068236489,
+      "slug": "best-laptops-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laser-printer-india-2026.mdx": {
+      "lastChecked": 1788068239492,
+      "slug": "best-laser-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laser-printer-under-15000-india-2026.mdx": {
+      "lastChecked": 1788068242496,
+      "slug": "best-laser-printer-under-15000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-led-desk-lamps-india-2026.mdx": {
+      "lastChecked": 1788068245499,
+      "slug": "best-led-desk-lamps-india-2026",
+      "skipped": "no price table"
+    },
+    "best-lenovo-laptop-india-2026.mdx": {
+      "lastChecked": 1788068248503,
+      "slug": "best-lenovo-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-lightweight-laptop-india-2026.mdx": {
+      "lastChecked": 1788068251506,
+      "slug": "best-lightweight-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-linux-laptop-india-2026.mdx": {
+      "lastChecked": 1788068254510,
+      "slug": "best-linux-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-long-range-electric-scooter-india-2026.mdx": {
+      "lastChecked": 1788068257514,
+      "slug": "best-long-range-electric-scooter-india-2026",
+      "skipped": "no price table"
+    },
+    "best-massage-gun-india-2026.mdx": {
+      "lastChecked": 1788068260517,
+      "slug": "best-massage-gun-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mechanical-keyboard-india-2026.mdx": {
+      "lastChecked": 1788068263521,
+      "slug": "best-mechanical-keyboard-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mechanical-keyboards-programmers-india-2026.mdx": {
+      "lastChecked": 1788068266524,
+      "slug": "best-mechanical-keyboards-programmers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mesh-office-chair-india-2026.mdx": {
+      "lastChecked": 1788068269528,
+      "slug": "best-mesh-office-chair-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mesh-wifi-system-india-2026.mdx": {
+      "lastChecked": 1788068272531,
+      "slug": "best-mesh-wifi-system-india-2026",
+      "skipped": "no price table"
+    },
+    "best-microwave-oven-india-2026.mdx": {
+      "lastChecked": 1788068275535,
+      "slug": "best-microwave-oven-india-2026",
+      "skipped": "no price table"
+    },
+    "best-microwave-ovens-india-2026.mdx": {
+      "lastChecked": 1788068278538,
+      "slug": "best-microwave-ovens-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mini-hair-straightener-india-2026.mdx": {
+      "lastChecked": 1788068281542,
+      "slug": "best-mini-hair-straightener-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirror-dash-cam-india-2026.mdx": {
+      "lastChecked": 1788068284545,
+      "slug": "best-mirror-dash-cam-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-for-beginners-india-2026.mdx": {
+      "lastChecked": 1788068287549,
+      "slug": "best-mirrorless-camera-for-beginners-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-for-video-india-2026.mdx": {
+      "lastChecked": 1788068290552,
+      "slug": "best-mirrorless-camera-for-video-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-for-youtube-india-2026.mdx": {
+      "lastChecked": 1788068293557,
+      "slug": "best-mirrorless-camera-for-youtube-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-under-1-lakh-india-2026.mdx": {
+      "lastChecked": 1788068296560,
+      "slug": "best-mirrorless-camera-under-1-lakh-india-2026",
       "skipped": "no price table"
     }
   }
