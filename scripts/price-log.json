@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-09-06T04:54:54.831Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "amazon-great-indian-festival-2026-tech-deals",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-4mp-security-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-a3-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-baby-monitor-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-printer-with-scanner-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-desktop-camera-with-night-vision-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-earbuds-deals-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-gifts-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-diwali-home-appliance-deals-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dji-drone-for-beginners-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-drone-for-photography-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-drone-for-video-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-drone-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-duplex-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-eco-friendly-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-festive-deals-on-printers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gadgets-for-diwali-gifting-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gifts-for-parents-diwali-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gravity-water-purifier-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-height-adjustable-standing-desk-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ink-tank-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mini-projector-for-travel-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-cameras-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mixer-grinder-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mixer-grinder-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mixer-grinders-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-arm-for-standing-desk-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-for-coding-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-for-wfh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-stand-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-under-15000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-with-speakers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitors-amazon-sale-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitors-for-coding-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitors-graphic-design-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-neckband-earphones-under-1000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-neckband-earphones-under-1500-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-neckband-earphones-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-night-vision-cctv-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-night-vision-security-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-earbuds-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-earbuds-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-earbuds-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-under-20000-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-08-30T05:35:49.388Z",
       "updated": [],
       "skipped": [
@@ -3657,6 +3864,256 @@
     "best-mirrorless-camera-under-1-lakh-india-2026.mdx": {
       "lastChecked": 1788068296560,
       "slug": "best-mirrorless-camera-under-1-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-2026-tech-deals.mdx": {
+      "lastChecked": 1788670494832,
+      "slug": "amazon-great-indian-festival-2026-tech-deals",
+      "skipped": "no price table"
+    },
+    "best-4mp-security-camera-india-2026.mdx": {
+      "lastChecked": 1788670497836,
+      "slug": "best-4mp-security-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-a3-printer-india-2026.mdx": {
+      "lastChecked": 1788670500839,
+      "slug": "best-a3-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-baby-monitor-camera-india-2026.mdx": {
+      "lastChecked": 1788670503840,
+      "slug": "best-baby-monitor-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-printer-with-scanner-india-2026.mdx": {
+      "lastChecked": 1788670506844,
+      "slug": "best-budget-printer-with-scanner-india-2026",
+      "skipped": "no price table"
+    },
+    "best-desktop-camera-with-night-vision-india-2026.mdx": {
+      "lastChecked": 1788670509848,
+      "slug": "best-desktop-camera-with-night-vision-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-earbuds-deals-india-2026.mdx": {
+      "lastChecked": 1788670512852,
+      "slug": "best-diwali-earbuds-deals-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-gifts-under-5000-india-2026.mdx": {
+      "lastChecked": 1788670515856,
+      "slug": "best-diwali-gifts-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-diwali-home-appliance-deals-india-2026.mdx": {
+      "lastChecked": 1788670518859,
+      "slug": "best-diwali-home-appliance-deals-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dji-drone-for-beginners-india-2026.mdx": {
+      "lastChecked": 1788670521863,
+      "slug": "best-dji-drone-for-beginners-india-2026",
+      "skipped": "no price table"
+    },
+    "best-drone-for-photography-india-2026.mdx": {
+      "lastChecked": 1788670524867,
+      "slug": "best-drone-for-photography-india-2026",
+      "skipped": "no price table"
+    },
+    "best-drone-for-video-india-2026.mdx": {
+      "lastChecked": 1788670527870,
+      "slug": "best-drone-for-video-india-2026",
+      "skipped": "no price table"
+    },
+    "best-drone-under-50000-india-2026.mdx": {
+      "lastChecked": 1788670530874,
+      "slug": "best-drone-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-duplex-printer-india-2026.mdx": {
+      "lastChecked": 1788670533878,
+      "slug": "best-duplex-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-eco-friendly-printer-india-2026.mdx": {
+      "lastChecked": 1788670536880,
+      "slug": "best-eco-friendly-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-festive-deals-on-printers-india-2026.mdx": {
+      "lastChecked": 1788670539884,
+      "slug": "best-festive-deals-on-printers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gadgets-for-diwali-gifting-india-2026.mdx": {
+      "lastChecked": 1788670542885,
+      "slug": "best-gadgets-for-diwali-gifting-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gifts-for-parents-diwali-india-2026.mdx": {
+      "lastChecked": 1788670545888,
+      "slug": "best-gifts-for-parents-diwali-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gravity-water-purifier-india-2026.mdx": {
+      "lastChecked": 1788670548892,
+      "slug": "best-gravity-water-purifier-india-2026",
+      "skipped": "no price table"
+    },
+    "best-height-adjustable-standing-desk-under-20000-india-2026.mdx": {
+      "lastChecked": 1788670551895,
+      "slug": "best-height-adjustable-standing-desk-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ink-tank-printer-india-2026.mdx": {
+      "lastChecked": 1788670554899,
+      "slug": "best-ink-tank-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mini-projector-for-travel-india-2026.mdx": {
+      "lastChecked": 1788670557902,
+      "slug": "best-mini-projector-for-travel-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-under-50000-india-2026.mdx": {
+      "lastChecked": 1788670560906,
+      "slug": "best-mirrorless-camera-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-cameras-india-2026.mdx": {
+      "lastChecked": 1788670563909,
+      "slug": "best-mirrorless-cameras-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mixer-grinder-india-2026.mdx": {
+      "lastChecked": 1788670566913,
+      "slug": "best-mixer-grinder-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mixer-grinder-under-3000-india-2026.mdx": {
+      "lastChecked": 1788670569916,
+      "slug": "best-mixer-grinder-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mixer-grinders-india-2026.mdx": {
+      "lastChecked": 1788670572920,
+      "slug": "best-mixer-grinders-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-arm-for-standing-desk-india-2026.mdx": {
+      "lastChecked": 1788670575923,
+      "slug": "best-monitor-arm-for-standing-desk-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-for-coding-india-2026.mdx": {
+      "lastChecked": 1788670578927,
+      "slug": "best-monitor-for-coding-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-for-students-india-2026.mdx": {
+      "lastChecked": 1788670581930,
+      "slug": "best-monitor-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-for-wfh-india-2026.mdx": {
+      "lastChecked": 1788670584934,
+      "slug": "best-monitor-for-wfh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-stand-india-2026.mdx": {
+      "lastChecked": 1788670587937,
+      "slug": "best-monitor-stand-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-under-10000-india-2026.mdx": {
+      "lastChecked": 1788670590940,
+      "slug": "best-monitor-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-under-15000-india-2026.mdx": {
+      "lastChecked": 1788670593944,
+      "slug": "best-monitor-under-15000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-under-20000-india-2026.mdx": {
+      "lastChecked": 1788670596947,
+      "slug": "best-monitor-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-with-speakers-india-2026.mdx": {
+      "lastChecked": 1788670599949,
+      "slug": "best-monitor-with-speakers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitors-amazon-sale-india-2026.mdx": {
+      "lastChecked": 1788670602953,
+      "slug": "best-monitors-amazon-sale-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitors-for-coding-india-2026.mdx": {
+      "lastChecked": 1788670605956,
+      "slug": "best-monitors-for-coding-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitors-graphic-design-india-2026.mdx": {
+      "lastChecked": 1788670608959,
+      "slug": "best-monitors-graphic-design-india-2026",
+      "skipped": "no price table"
+    },
+    "best-neckband-earphones-under-1000-india-2026.mdx": {
+      "lastChecked": 1788670611963,
+      "slug": "best-neckband-earphones-under-1000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-neckband-earphones-under-1500-india-2026.mdx": {
+      "lastChecked": 1788670614966,
+      "slug": "best-neckband-earphones-under-1500-india-2026",
+      "skipped": "no price table"
+    },
+    "best-neckband-earphones-under-2000-india-2026.mdx": {
+      "lastChecked": 1788670617969,
+      "slug": "best-neckband-earphones-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-night-vision-cctv-camera-india-2026.mdx": {
+      "lastChecked": 1788670620973,
+      "slug": "best-night-vision-cctv-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-night-vision-security-camera-india-2026.mdx": {
+      "lastChecked": 1788670623976,
+      "slug": "best-night-vision-security-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-earbuds-india-2026.mdx": {
+      "lastChecked": 1788670626981,
+      "slug": "best-noise-cancelling-earbuds-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-earbuds-under-3000-india-2026.mdx": {
+      "lastChecked": 1788670629984,
+      "slug": "best-noise-cancelling-earbuds-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-earbuds-under-5000-india-2026.mdx": {
+      "lastChecked": 1788670632988,
+      "slug": "best-noise-cancelling-earbuds-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-headphones-india-2026.mdx": {
+      "lastChecked": 1788670635991,
+      "slug": "best-noise-cancelling-headphones-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-headphones-under-10000-india-2026.mdx": {
+      "lastChecked": 1788670638995,
+      "slug": "best-noise-cancelling-headphones-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-headphones-under-20000-india-2026.mdx": {
+      "lastChecked": 1788670641998,
+      "slug": "best-noise-cancelling-headphones-under-20000-india-2026",
       "skipped": "no price table"
     }
   }
