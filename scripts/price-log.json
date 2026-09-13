@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-09-13T05:04:04.713Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "amazon-sale-exchange-offers-guide-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-1-5-ton-5-star-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-2-ton-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-deals-great-indian-festival-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-for-bedroom-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-for-large-room-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-for-living-room-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-asus-rog-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-big-ticket-purchases-amazon-sale-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-bldc-ceiling-fan-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-headphones-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-laptop-for-coding-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-business-laptop-under-80000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceiling-fan-brand-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceiling-fan-for-summer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceiling-fan-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ceiling-fan-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-creator-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dell-xps-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gaming-laptop-under-1-5-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-inverter-ac-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-inverter-ac-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-deals-great-indian-festival-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-3d-rendering-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-architects-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-cad-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-coding-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-coding-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-machine-learning-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-programming-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-python-programming-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-for-software-developers-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-1-2-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-1-5-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-55000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-65000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-75000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-85000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-under-95000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-macbook-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-macbook-for-video-editing-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-under-5000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-office-chair-for-back-pain-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-office-chair-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-office-chair-under-3000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-office-chair-work-from-home-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oil-filled-room-heater-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oled-gaming-laptop-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oled-laptop-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oled-tv-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-09-06T04:54:54.831Z",
       "updated": [],
       "skipped": [
@@ -4114,6 +4321,256 @@
     "best-noise-cancelling-headphones-under-20000-india-2026.mdx": {
       "lastChecked": 1788670641998,
       "slug": "best-noise-cancelling-headphones-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "amazon-sale-exchange-offers-guide-india-2026.mdx": {
+      "lastChecked": 1789275844713,
+      "slug": "amazon-sale-exchange-offers-guide-india-2026",
+      "skipped": "no price table"
+    },
+    "best-1-5-ton-5-star-ac-india-2026.mdx": {
+      "lastChecked": 1789275847717,
+      "slug": "best-1-5-ton-5-star-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-2-ton-ac-india-2026.mdx": {
+      "lastChecked": 1789275850720,
+      "slug": "best-2-ton-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-deals-great-indian-festival-2026.mdx": {
+      "lastChecked": 1789275853722,
+      "slug": "best-ac-deals-great-indian-festival-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-for-bedroom-india-2026.mdx": {
+      "lastChecked": 1789275856725,
+      "slug": "best-ac-for-bedroom-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-for-large-room-india-2026.mdx": {
+      "lastChecked": 1789275859729,
+      "slug": "best-ac-for-large-room-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-for-living-room-india-2026.mdx": {
+      "lastChecked": 1789275862733,
+      "slug": "best-ac-for-living-room-india-2026",
+      "skipped": "no price table"
+    },
+    "best-asus-rog-laptop-india-2026.mdx": {
+      "lastChecked": 1789275865736,
+      "slug": "best-asus-rog-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-big-ticket-purchases-amazon-sale-india-2026.mdx": {
+      "lastChecked": 1789275868740,
+      "slug": "best-big-ticket-purchases-amazon-sale-india-2026",
+      "skipped": "no price table"
+    },
+    "best-bldc-ceiling-fan-india-2026.mdx": {
+      "lastChecked": 1789275871744,
+      "slug": "best-bldc-ceiling-fan-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-headphones-india-2026.mdx": {
+      "lastChecked": 1789275874746,
+      "slug": "best-budget-headphones-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-laptop-for-coding-india-2026.mdx": {
+      "lastChecked": 1789275877750,
+      "slug": "best-budget-laptop-for-coding-india-2026",
+      "skipped": "no price table"
+    },
+    "best-business-laptop-under-80000-india-2026.mdx": {
+      "lastChecked": 1789275880754,
+      "slug": "best-business-laptop-under-80000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceiling-fan-brand-india-2026.mdx": {
+      "lastChecked": 1789275883757,
+      "slug": "best-ceiling-fan-brand-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceiling-fan-for-summer-india-2026.mdx": {
+      "lastChecked": 1789275886761,
+      "slug": "best-ceiling-fan-for-summer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceiling-fan-india-2026.mdx": {
+      "lastChecked": 1789275889764,
+      "slug": "best-ceiling-fan-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ceiling-fan-under-5000-india-2026.mdx": {
+      "lastChecked": 1789275892768,
+      "slug": "best-ceiling-fan-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-creator-laptop-india-2026.mdx": {
+      "lastChecked": 1789275895771,
+      "slug": "best-creator-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dell-xps-india-2026.mdx": {
+      "lastChecked": 1789275898775,
+      "slug": "best-dell-xps-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gaming-laptop-under-1-5-lakh-india-2026.mdx": {
+      "lastChecked": 1789275901778,
+      "slug": "best-gaming-laptop-under-1-5-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-inverter-ac-under-40000-india-2026.mdx": {
+      "lastChecked": 1789275904782,
+      "slug": "best-inverter-ac-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-inverter-ac-under-50000-india-2026.mdx": {
+      "lastChecked": 1789275907786,
+      "slug": "best-inverter-ac-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-deals-great-indian-festival-2026.mdx": {
+      "lastChecked": 1789275910789,
+      "slug": "best-laptop-deals-great-indian-festival-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-3d-rendering-india-2026.mdx": {
+      "lastChecked": 1789275913793,
+      "slug": "best-laptop-for-3d-rendering-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-architects-india-2026.mdx": {
+      "lastChecked": 1789275916796,
+      "slug": "best-laptop-for-architects-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-cad-india-2026.mdx": {
+      "lastChecked": 1789275919800,
+      "slug": "best-laptop-for-cad-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-coding-under-40000-india-2026.mdx": {
+      "lastChecked": 1789275922803,
+      "slug": "best-laptop-for-coding-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-coding-under-50000-india-2026.mdx": {
+      "lastChecked": 1789275925807,
+      "slug": "best-laptop-for-coding-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-machine-learning-india-2026.mdx": {
+      "lastChecked": 1789275928810,
+      "slug": "best-laptop-for-machine-learning-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-programming-students-india-2026.mdx": {
+      "lastChecked": 1789275931814,
+      "slug": "best-laptop-for-programming-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-python-programming-india-2026.mdx": {
+      "lastChecked": 1789275934817,
+      "slug": "best-laptop-for-python-programming-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-for-software-developers-india-2026.mdx": {
+      "lastChecked": 1789275937821,
+      "slug": "best-laptop-for-software-developers-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-1-2-lakh-india-2026.mdx": {
+      "lastChecked": 1789275940824,
+      "slug": "best-laptop-under-1-2-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-1-5-lakh-india-2026.mdx": {
+      "lastChecked": 1789275943828,
+      "slug": "best-laptop-under-1-5-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-55000-india-2026.mdx": {
+      "lastChecked": 1789275946831,
+      "slug": "best-laptop-under-55000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-65000-india-2026.mdx": {
+      "lastChecked": 1789275949835,
+      "slug": "best-laptop-under-65000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-75000-india-2026.mdx": {
+      "lastChecked": 1789275952838,
+      "slug": "best-laptop-under-75000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-85000-india-2026.mdx": {
+      "lastChecked": 1789275955842,
+      "slug": "best-laptop-under-85000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-under-95000-india-2026.mdx": {
+      "lastChecked": 1789275958845,
+      "slug": "best-laptop-under-95000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-macbook-for-students-india-2026.mdx": {
+      "lastChecked": 1789275961849,
+      "slug": "best-macbook-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-macbook-for-video-editing-india-2026.mdx": {
+      "lastChecked": 1789275964852,
+      "slug": "best-macbook-for-video-editing-india-2026",
+      "skipped": "no price table"
+    },
+    "best-noise-cancelling-headphones-under-5000-india-2026.mdx": {
+      "lastChecked": 1789275967856,
+      "slug": "best-noise-cancelling-headphones-under-5000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-office-chair-for-back-pain-india-2026.mdx": {
+      "lastChecked": 1789275970859,
+      "slug": "best-office-chair-for-back-pain-india-2026",
+      "skipped": "no price table"
+    },
+    "best-office-chair-india-2026.mdx": {
+      "lastChecked": 1789275973863,
+      "slug": "best-office-chair-india-2026",
+      "skipped": "no price table"
+    },
+    "best-office-chair-under-3000-india-2026.mdx": {
+      "lastChecked": 1789275976866,
+      "slug": "best-office-chair-under-3000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-office-chair-work-from-home-india-2026.mdx": {
+      "lastChecked": 1789275979870,
+      "slug": "best-office-chair-work-from-home-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oil-filled-room-heater-india-2026.mdx": {
+      "lastChecked": 1789275982873,
+      "slug": "best-oil-filled-room-heater-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oled-gaming-laptop-india-2026.mdx": {
+      "lastChecked": 1789275985877,
+      "slug": "best-oled-gaming-laptop-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oled-laptop-under-60000-india-2026.mdx": {
+      "lastChecked": 1789275988880,
+      "slug": "best-oled-laptop-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oled-tv-india-2026.mdx": {
+      "lastChecked": 1789275991883,
+      "slug": "best-oled-tv-india-2026",
       "skipped": "no price table"
     }
   }
