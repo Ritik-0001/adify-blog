@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-09-20T05:06:31.510Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "ac-buying-guide-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-10kg-washing-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-500-litre-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-55-inch-tv-under-60000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-65-inch-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-75-inch-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-9kg-washing-machine-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-brand-reliability-ranking-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-for-extreme-heat-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-for-humid-climate-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-blue-star-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-compact-dishwasher-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-convertible-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-copper-condenser-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-daikin-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dishwasher-for-indian-utensils-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dishwasher-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-dji-drone-under-1-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-scooter-with-longest-range-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ergonomic-chair-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-front-load-washing-machine-under-40000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-full-frame-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-herman-miller-alternative-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-hitachi-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-home-gym-setup-under-1-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-home-theatre-under-50000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-inverter-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-lg-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mini-led-tv-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-under-1-5-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-mirrorless-camera-under-80000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-multi-door-refrigerator-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oled-tv-under-1-5-lakh-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-open-ear-earbuds-running-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-open-ear-headphones-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-oscillating-toothbrush-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-otg-oven-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-outdoor-cctv-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-outdoor-security-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-panasonic-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-pet-camera-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-phone-for-night-photography-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-phone-for-students-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-phone-for-video-recording-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-phones-under-10000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-photo-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-portable-ac-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-portable-laptop-cooling-pad-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-portable-projector-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-portable-projectors-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-09-13T05:04:04.713Z",
       "updated": [],
       "skipped": [
@@ -4571,6 +4778,256 @@
     "best-oled-tv-india-2026.mdx": {
       "lastChecked": 1789275991883,
       "slug": "best-oled-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "ac-buying-guide-india-2026.mdx": {
+      "lastChecked": 1789880791511,
+      "slug": "ac-buying-guide-india-2026",
+      "skipped": "no price table"
+    },
+    "best-10kg-washing-machine-india-2026.mdx": {
+      "lastChecked": 1789880794514,
+      "slug": "best-10kg-washing-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-500-litre-refrigerator-india-2026.mdx": {
+      "lastChecked": 1789880797518,
+      "slug": "best-500-litre-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-55-inch-tv-under-60000-india-2026.mdx": {
+      "lastChecked": 1789880800518,
+      "slug": "best-55-inch-tv-under-60000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-65-inch-tv-india-2026.mdx": {
+      "lastChecked": 1789880803522,
+      "slug": "best-65-inch-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-75-inch-tv-india-2026.mdx": {
+      "lastChecked": 1789880806526,
+      "slug": "best-75-inch-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-9kg-washing-machine-india-2026.mdx": {
+      "lastChecked": 1789880809530,
+      "slug": "best-9kg-washing-machine-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-brand-reliability-ranking-india-2026.mdx": {
+      "lastChecked": 1789880812530,
+      "slug": "best-ac-brand-reliability-ranking-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-for-extreme-heat-india-2026.mdx": {
+      "lastChecked": 1789880815534,
+      "slug": "best-ac-for-extreme-heat-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-for-humid-climate-india-2026.mdx": {
+      "lastChecked": 1789880818538,
+      "slug": "best-ac-for-humid-climate-india-2026",
+      "skipped": "no price table"
+    },
+    "best-blue-star-ac-india-2026.mdx": {
+      "lastChecked": 1789880821541,
+      "slug": "best-blue-star-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-compact-dishwasher-india-2026.mdx": {
+      "lastChecked": 1789880824545,
+      "slug": "best-compact-dishwasher-india-2026",
+      "skipped": "no price table"
+    },
+    "best-convertible-refrigerator-india-2026.mdx": {
+      "lastChecked": 1789880827549,
+      "slug": "best-convertible-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-copper-condenser-ac-india-2026.mdx": {
+      "lastChecked": 1789880830552,
+      "slug": "best-copper-condenser-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-daikin-ac-india-2026.mdx": {
+      "lastChecked": 1789880833556,
+      "slug": "best-daikin-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dishwasher-for-indian-utensils-2026.mdx": {
+      "lastChecked": 1789880836559,
+      "slug": "best-dishwasher-for-indian-utensils-2026",
+      "skipped": "no price table"
+    },
+    "best-dishwasher-under-40000-india-2026.mdx": {
+      "lastChecked": 1789880839563,
+      "slug": "best-dishwasher-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-dji-drone-under-1-lakh-india-2026.mdx": {
+      "lastChecked": 1789880842566,
+      "slug": "best-dji-drone-under-1-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-scooter-with-longest-range-india-2026.mdx": {
+      "lastChecked": 1789880845570,
+      "slug": "best-electric-scooter-with-longest-range-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ergonomic-chair-under-40000-india-2026.mdx": {
+      "lastChecked": 1789880848573,
+      "slug": "best-ergonomic-chair-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-front-load-washing-machine-under-40000-india-2026.mdx": {
+      "lastChecked": 1789880851577,
+      "slug": "best-front-load-washing-machine-under-40000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-full-frame-camera-india-2026.mdx": {
+      "lastChecked": 1789880854580,
+      "slug": "best-full-frame-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-herman-miller-alternative-india-2026.mdx": {
+      "lastChecked": 1789880857584,
+      "slug": "best-herman-miller-alternative-india-2026",
+      "skipped": "no price table"
+    },
+    "best-hitachi-ac-india-2026.mdx": {
+      "lastChecked": 1789880860587,
+      "slug": "best-hitachi-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-home-gym-setup-under-1-lakh-india-2026.mdx": {
+      "lastChecked": 1789880863591,
+      "slug": "best-home-gym-setup-under-1-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-home-theatre-under-50000-india-2026.mdx": {
+      "lastChecked": 1789880866595,
+      "slug": "best-home-theatre-under-50000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-inverter-refrigerator-india-2026.mdx": {
+      "lastChecked": 1789880869598,
+      "slug": "best-inverter-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-lg-ac-india-2026.mdx": {
+      "lastChecked": 1789880872602,
+      "slug": "best-lg-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mini-led-tv-india-2026.mdx": {
+      "lastChecked": 1789880875605,
+      "slug": "best-mini-led-tv-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-under-1-5-lakh-india-2026.mdx": {
+      "lastChecked": 1789880878609,
+      "slug": "best-mirrorless-camera-under-1-5-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-mirrorless-camera-under-80000-india-2026.mdx": {
+      "lastChecked": 1789880881612,
+      "slug": "best-mirrorless-camera-under-80000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-multi-door-refrigerator-india-2026.mdx": {
+      "lastChecked": 1789880884615,
+      "slug": "best-multi-door-refrigerator-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oled-tv-under-1-5-lakh-india-2026.mdx": {
+      "lastChecked": 1789880887619,
+      "slug": "best-oled-tv-under-1-5-lakh-india-2026",
+      "skipped": "no price table"
+    },
+    "best-open-ear-earbuds-running-india-2026.mdx": {
+      "lastChecked": 1789880890622,
+      "slug": "best-open-ear-earbuds-running-india-2026",
+      "skipped": "no price table"
+    },
+    "best-open-ear-headphones-india-2026.mdx": {
+      "lastChecked": 1789880893626,
+      "slug": "best-open-ear-headphones-india-2026",
+      "skipped": "no price table"
+    },
+    "best-oscillating-toothbrush-india-2026.mdx": {
+      "lastChecked": 1789880896629,
+      "slug": "best-oscillating-toothbrush-india-2026",
+      "skipped": "no price table"
+    },
+    "best-otg-oven-india-2026.mdx": {
+      "lastChecked": 1789880899633,
+      "slug": "best-otg-oven-india-2026",
+      "skipped": "no price table"
+    },
+    "best-outdoor-cctv-camera-india-2026.mdx": {
+      "lastChecked": 1789880902636,
+      "slug": "best-outdoor-cctv-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-outdoor-security-camera-india-2026.mdx": {
+      "lastChecked": 1789880905640,
+      "slug": "best-outdoor-security-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-panasonic-ac-india-2026.mdx": {
+      "lastChecked": 1789880908643,
+      "slug": "best-panasonic-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-pet-camera-india-2026.mdx": {
+      "lastChecked": 1789880911647,
+      "slug": "best-pet-camera-india-2026",
+      "skipped": "no price table"
+    },
+    "best-phone-for-night-photography-india-2026.mdx": {
+      "lastChecked": 1789880914650,
+      "slug": "best-phone-for-night-photography-india-2026",
+      "skipped": "no price table"
+    },
+    "best-phone-for-students-india-2026.mdx": {
+      "lastChecked": 1789880917654,
+      "slug": "best-phone-for-students-india-2026",
+      "skipped": "no price table"
+    },
+    "best-phone-for-video-recording-india-2026.mdx": {
+      "lastChecked": 1789880920657,
+      "slug": "best-phone-for-video-recording-india-2026",
+      "skipped": "no price table"
+    },
+    "best-phones-under-10000-india-2026.mdx": {
+      "lastChecked": 1789880923661,
+      "slug": "best-phones-under-10000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-photo-printer-india-2026.mdx": {
+      "lastChecked": 1789880926664,
+      "slug": "best-photo-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-portable-ac-india-2026.mdx": {
+      "lastChecked": 1789880929668,
+      "slug": "best-portable-ac-india-2026",
+      "skipped": "no price table"
+    },
+    "best-portable-laptop-cooling-pad-india-2026.mdx": {
+      "lastChecked": 1789880932671,
+      "slug": "best-portable-laptop-cooling-pad-india-2026",
+      "skipped": "no price table"
+    },
+    "best-portable-projector-india-2026.mdx": {
+      "lastChecked": 1789880935675,
+      "slug": "best-portable-projector-india-2026",
+      "skipped": "no price table"
+    },
+    "best-portable-projectors-india-2026.mdx": {
+      "lastChecked": 1789880938678,
+      "slug": "best-portable-projectors-india-2026",
       "skipped": "no price table"
     }
   }
