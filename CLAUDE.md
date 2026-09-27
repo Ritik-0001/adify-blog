@@ -110,6 +110,20 @@ grep -rlE '<[0-9]' posts/*.mdx posts/queue/*.mdx
 ```
 (Use `-E`, not `-P` — Git Bash's grep on Windows doesn't support PCRE.) If Vercel build logs ever show this error for a specific slug, it's always this pattern — find it with the grep above scoped to that file and rewrite with words ("under", "over") instead of `<`/`>`.
 
+## The #2 recurring content-corruption bug: Unicode digit/currency misfires
+
+Found and fixed Sept 2026 (touched 291 files for subscript digits, 176 files for currency symbols — see git history around commits `08f5cd7` and `6e163bf`). Some content-generation pass in this project's history had a bug where digit characters near a `₹` sign occasionally got mis-encoded instead of staying plain ASCII digits:
+
+- **Subscript digits** — a normal digit (`0`-`9`) rendered as its Unicode *subscript* form (`₀₁₂₃₄₅₆₇₈₉`, U+2080–U+2089). Looks identical to a normal digit in a terminal/editor, but renders as tiny subscript text in a browser. Example: `GIF target ₹30,000–₃₃,000` (the `33` is subscript). **This is exactly, losslessly reversible** — subscript codepoints have an unambiguous digit value, so `s/[₀-₉]/<same digit>/g` is always safe and correct. No judgment needed, just do it.
+- **Currency-symbol misfires** — worse: a digit occasionally landed one of 6 wrong currency symbols instead: Peso `₱` (U+20B1), Hryvnia `₴` (U+20B4), Cedi `₵` (U+20B5), Livre `₶` (U+20B6), Spesmilo `₷` (U+20B7), or Tenge `₸` (U+20B8) — all neighbors of `₹` (U+20B9) in the Currency Symbols Unicode block. Example: `Regular ₹36,000-₴0,000 range` (should be `₹36,000-40,000`). **This is NOT reliably reversible** — confirmed via repeated cases where the identical corrupted symbol appeared twice in a row standing for two different original digits (e.g. `₹92,000–₴₴,000`). Don't try to "solve" the exact original number; instead reconstruct a plausible, internally-consistent one (this site's own convention: every clean `A-B` range has B modestly above A) while preserving every digit that's still plain ASCII in the token.
+
+**Before pushing any batch of new/edited posts, also grep for both**, alongside the `<[0-9]` check:
+```bash
+grep -rlE '[₴₸₱₵₶₷]' posts/*.mdx posts/queue/*.mdx     # wrong currency symbol - needs reconstruction
+grep -rlP '[\x{2080}-\x{2089}]' posts/*.mdx posts/queue/*.mdx   # subscript digit - safe to auto-fix (needs -P; skip on Windows Git Bash, use node instead)
+```
+If you generate a post yourself (rather than piping through whatever process caused this originally), plain ASCII digits typed directly are never at risk — this only ever showed up in mass-generated batches from an earlier session, never in files written character-by-character via the `Write` tool in a normal session.
+
 ## Category taxonomy (organic, not enforced by code)
 
 `category` is a free string — `lib/posts.ts` does no validation or enum-checking. Over time the site has converged on a fairly specific taxonomy; reuse existing values rather than inventing new generic ones (check `grep -h "^category:" posts/*.mdx | sort -u` if unsure). Examples in active use: `Laptops`, `Inverter AC`, `Appliances`, `Refrigerators`, `Washing Machines`, `TVs`, `Monitors`, `Audio`, `Kitchen`, `Smartphones`, `Dash Cams`, `Electric Scooters`, `Electric Toothbrushes`, `Fitness Equipment`, `Photography & Drones`, `Robot Vacuums`, `Health`, `SaaS`, `Accessories`, `Comparisons` (used heavily for "X vs Y" posts).
