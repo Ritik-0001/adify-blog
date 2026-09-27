@@ -1,6 +1,213 @@
 {
   "runs": [
     {
+      "timestamp": "2026-09-27T05:29:41.263Z",
+      "updated": [],
+      "skipped": [
+        {
+          "slug": "amazon-great-indian-festival-2026-deals-live-now",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-2026-discount-guide",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-2026-offers-full-list",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-ac-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-appliance-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-bank-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-camera-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-common-mistakes-to-avoid-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-coupon-codes-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-dates-and-timings-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-exchange-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-furniture-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-headphone-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-kitchen-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-laptop-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-mobile-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-no-cost-emi-guide-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-premium-deals-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-price-tracking-guide-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-prime-early-access-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-refrigerator-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-shopping-checklist-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-smartwatch-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-tv-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-under-10000-deals",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-under-20000-deals",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-under-50000-deals",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-vs-flipkart-big-billion-days-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "amazon-great-indian-festival-washing-machine-offers-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-22-inch-monitor-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-ac-deals-amazon-great-indian-festival-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-affordable-standing-desk-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-budget-monitor-for-programming-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-business-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-colour-printer-under-12000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-compact-standing-desk-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-cost-effective-printer-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-desk-lamp-for-studying-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-electric-cooker-for-hostel-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-first-monitor-for-beginners-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gaming-chair-under-20000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gaming-chair-under-25000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gaming-mouse-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-gaming-mouse-under-2000-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-good-printer-for-home-use-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-high-end-monitor-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-laptop-deals-amazon-great-indian-festival-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-led-desk-lamp-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-for-dual-setup-india-2026",
+          "skipped": "no price table"
+        },
+        {
+          "slug": "best-monitor-for-learning-and-study-india-2026",
+          "skipped": "no price table"
+        }
+      ],
+      "errors": []
+    },
+    {
       "timestamp": "2026-09-20T05:06:31.510Z",
       "updated": [],
       "skipped": [
@@ -5028,6 +5235,256 @@
     "best-portable-projectors-india-2026.mdx": {
       "lastChecked": 1789880938678,
       "slug": "best-portable-projectors-india-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-2026-deals-live-now.mdx": {
+      "lastChecked": 1790486981264,
+      "slug": "amazon-great-indian-festival-2026-deals-live-now",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-2026-discount-guide.mdx": {
+      "lastChecked": 1790486984268,
+      "slug": "amazon-great-indian-festival-2026-discount-guide",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-2026-offers-full-list.mdx": {
+      "lastChecked": 1790486987272,
+      "slug": "amazon-great-indian-festival-2026-offers-full-list",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-ac-offers-2026.mdx": {
+      "lastChecked": 1790486990273,
+      "slug": "amazon-great-indian-festival-ac-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-appliance-offers-2026.mdx": {
+      "lastChecked": 1790486993277,
+      "slug": "amazon-great-indian-festival-appliance-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-bank-offers-2026.mdx": {
+      "lastChecked": 1790486996281,
+      "slug": "amazon-great-indian-festival-bank-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-camera-offers-2026.mdx": {
+      "lastChecked": 1790486999285,
+      "slug": "amazon-great-indian-festival-camera-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-common-mistakes-to-avoid-2026.mdx": {
+      "lastChecked": 1790487002286,
+      "slug": "amazon-great-indian-festival-common-mistakes-to-avoid-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-coupon-codes-2026.mdx": {
+      "lastChecked": 1790487005290,
+      "slug": "amazon-great-indian-festival-coupon-codes-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-dates-and-timings-2026.mdx": {
+      "lastChecked": 1790487008294,
+      "slug": "amazon-great-indian-festival-dates-and-timings-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-exchange-offers-2026.mdx": {
+      "lastChecked": 1790487011298,
+      "slug": "amazon-great-indian-festival-exchange-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-furniture-offers-2026.mdx": {
+      "lastChecked": 1790487014301,
+      "slug": "amazon-great-indian-festival-furniture-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-headphone-offers-2026.mdx": {
+      "lastChecked": 1790487017305,
+      "slug": "amazon-great-indian-festival-headphone-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-kitchen-offers-2026.mdx": {
+      "lastChecked": 1790487020308,
+      "slug": "amazon-great-indian-festival-kitchen-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-laptop-offers-2026.mdx": {
+      "lastChecked": 1790487023312,
+      "slug": "amazon-great-indian-festival-laptop-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-mobile-offers-2026.mdx": {
+      "lastChecked": 1790487026316,
+      "slug": "amazon-great-indian-festival-mobile-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-no-cost-emi-guide-2026.mdx": {
+      "lastChecked": 1790487029319,
+      "slug": "amazon-great-indian-festival-no-cost-emi-guide-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-premium-deals-2026.mdx": {
+      "lastChecked": 1790487032323,
+      "slug": "amazon-great-indian-festival-premium-deals-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-price-tracking-guide-2026.mdx": {
+      "lastChecked": 1790487035326,
+      "slug": "amazon-great-indian-festival-price-tracking-guide-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-prime-early-access-2026.mdx": {
+      "lastChecked": 1790487038330,
+      "slug": "amazon-great-indian-festival-prime-early-access-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-refrigerator-offers-2026.mdx": {
+      "lastChecked": 1790487041333,
+      "slug": "amazon-great-indian-festival-refrigerator-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-shopping-checklist-2026.mdx": {
+      "lastChecked": 1790487044334,
+      "slug": "amazon-great-indian-festival-shopping-checklist-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-smartwatch-offers-2026.mdx": {
+      "lastChecked": 1790487047338,
+      "slug": "amazon-great-indian-festival-smartwatch-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-tv-offers-2026.mdx": {
+      "lastChecked": 1790487050341,
+      "slug": "amazon-great-indian-festival-tv-offers-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-under-10000-deals.mdx": {
+      "lastChecked": 1790487053345,
+      "slug": "amazon-great-indian-festival-under-10000-deals",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-under-20000-deals.mdx": {
+      "lastChecked": 1790487056349,
+      "slug": "amazon-great-indian-festival-under-20000-deals",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-under-50000-deals.mdx": {
+      "lastChecked": 1790487059350,
+      "slug": "amazon-great-indian-festival-under-50000-deals",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-vs-flipkart-big-billion-days-2026.mdx": {
+      "lastChecked": 1790487062354,
+      "slug": "amazon-great-indian-festival-vs-flipkart-big-billion-days-2026",
+      "skipped": "no price table"
+    },
+    "amazon-great-indian-festival-washing-machine-offers-2026.mdx": {
+      "lastChecked": 1790487065357,
+      "slug": "amazon-great-indian-festival-washing-machine-offers-2026",
+      "skipped": "no price table"
+    },
+    "best-22-inch-monitor-india-2026.mdx": {
+      "lastChecked": 1790487068361,
+      "slug": "best-22-inch-monitor-india-2026",
+      "skipped": "no price table"
+    },
+    "best-ac-deals-amazon-great-indian-festival-2026.mdx": {
+      "lastChecked": 1790487071364,
+      "slug": "best-ac-deals-amazon-great-indian-festival-2026",
+      "skipped": "no price table"
+    },
+    "best-affordable-standing-desk-india-2026.mdx": {
+      "lastChecked": 1790487074368,
+      "slug": "best-affordable-standing-desk-india-2026",
+      "skipped": "no price table"
+    },
+    "best-budget-monitor-for-programming-india-2026.mdx": {
+      "lastChecked": 1790487077371,
+      "slug": "best-budget-monitor-for-programming-india-2026",
+      "skipped": "no price table"
+    },
+    "best-business-printer-india-2026.mdx": {
+      "lastChecked": 1790487080375,
+      "slug": "best-business-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-colour-printer-under-12000-india-2026.mdx": {
+      "lastChecked": 1790487083378,
+      "slug": "best-colour-printer-under-12000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-compact-standing-desk-india-2026.mdx": {
+      "lastChecked": 1790487086382,
+      "slug": "best-compact-standing-desk-india-2026",
+      "skipped": "no price table"
+    },
+    "best-cost-effective-printer-india-2026.mdx": {
+      "lastChecked": 1790487089385,
+      "slug": "best-cost-effective-printer-india-2026",
+      "skipped": "no price table"
+    },
+    "best-desk-lamp-for-studying-india-2026.mdx": {
+      "lastChecked": 1790487092389,
+      "slug": "best-desk-lamp-for-studying-india-2026",
+      "skipped": "no price table"
+    },
+    "best-electric-cooker-for-hostel-india-2026.mdx": {
+      "lastChecked": 1790487095392,
+      "slug": "best-electric-cooker-for-hostel-india-2026",
+      "skipped": "no price table"
+    },
+    "best-first-monitor-for-beginners-india-2026.mdx": {
+      "lastChecked": 1790487098396,
+      "slug": "best-first-monitor-for-beginners-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gaming-chair-under-20000-india-2026.mdx": {
+      "lastChecked": 1790487101399,
+      "slug": "best-gaming-chair-under-20000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gaming-chair-under-25000-india-2026.mdx": {
+      "lastChecked": 1790487104403,
+      "slug": "best-gaming-chair-under-25000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gaming-mouse-india-2026.mdx": {
+      "lastChecked": 1790487107406,
+      "slug": "best-gaming-mouse-india-2026",
+      "skipped": "no price table"
+    },
+    "best-gaming-mouse-under-2000-india-2026.mdx": {
+      "lastChecked": 1790487110410,
+      "slug": "best-gaming-mouse-under-2000-india-2026",
+      "skipped": "no price table"
+    },
+    "best-good-printer-for-home-use-india-2026.mdx": {
+      "lastChecked": 1790487113413,
+      "slug": "best-good-printer-for-home-use-india-2026",
+      "skipped": "no price table"
+    },
+    "best-high-end-monitor-india-2026.mdx": {
+      "lastChecked": 1790487116417,
+      "slug": "best-high-end-monitor-india-2026",
+      "skipped": "no price table"
+    },
+    "best-laptop-deals-amazon-great-indian-festival-2026.mdx": {
+      "lastChecked": 1790487119418,
+      "slug": "best-laptop-deals-amazon-great-indian-festival-2026",
+      "skipped": "no price table"
+    },
+    "best-led-desk-lamp-india-2026.mdx": {
+      "lastChecked": 1790487122422,
+      "slug": "best-led-desk-lamp-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-for-dual-setup-india-2026.mdx": {
+      "lastChecked": 1790487125425,
+      "slug": "best-monitor-for-dual-setup-india-2026",
+      "skipped": "no price table"
+    },
+    "best-monitor-for-learning-and-study-india-2026.mdx": {
+      "lastChecked": 1790487128429,
+      "slug": "best-monitor-for-learning-and-study-india-2026",
       "skipped": "no price table"
     }
   }
