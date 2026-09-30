@@ -126,7 +126,7 @@ const t=fs.readFileSync(d+'/'+f,'utf8');
 if(/[₱₴₵₶₷₸]/.test(t))bad.push('wrong-currency '+d+'/'+f);
 if(/[₀-₉]/.test(t))bad.push('subscript '+d+'/'+f);
 if(/<[0-9]/.test(t))bad.push('lt-digit '+d+'/'+f);}
-console.log(bad.length?bad.join('\n'):'clean');"
+console.log(bad.length?bad.join('\n'):'clean');process.exitCode=bad.length?1:0;"
 ```
 Wrong currency symbols need reconstruction (see above). Subscript digits are safe to auto-fix. The same one-liner covers the `<[0-9]` build-breaker.
 
